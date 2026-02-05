@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../data/site';
+---
+
+<BaseLayout
+  title="Términos, Condiciones y Política de Privacidad"
+  description="Términos de uso, condiciones del servicio y política de privacidad de Bendov Clínica Estética."
+  noindex={true}
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-primary-950 pt-32 pb-16 md:pt-40 md:pb-20">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-950 to-primary-800" />
+    <div class="relative mx-auto max-w-4xl px-6 text-center">
+      <h1 class="font-display text-3xl font-bold text-white md:text-5xl">Términos, Condiciones y Política de Privacidad</h1>
+      <p class="mt-4 text-primary-200">Última actualización: Noviembre 2025</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="mx-auto max-w-3xl px-6 py-16 md:py-24">
+    <div class="prose prose-neutral max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-neutral-950 prose-p:leading-relaxed prose-p:text-neutral-600 prose-a:text-primary-700 prose-a:no-underline hover:prose-a:underline">
+      <h2>1. Información General</h2>
+      <p>
+        El presente documento establece los Términos y Condiciones de uso del sitio web de <strong>{siteConfig.name}</strong>,
+        así como la Política de Privacidad aplicable al tratamiento de datos personales de los usuarios y pacientes.
+      </p>
+      <p>
+        {siteConfig.name} es una clínica de medicina estética ubicada en {siteConfig.contact.address},
+        dedicada a ofrecer procedimientos y tratamientos estéticos de alta calidad.
+      </p>
+
+      <h2>2. Uso del Sitio Web</h2>
+      <p>
+        El acceso y uso de este sitio web implica la aceptación de estos términos y condiciones. El contenido
+        publicado tiene carácter informativo y no constituye asesoría médica. Para una evaluación personalizada,
+        le recomendamos agendar una consulta con nuestros especialistas.
+      </p>
+      <p>
+        La información sobre procedimientos, tratamientos y resultados es referencial. Los resultados individuales
+        pueden variar según las características de cada paciente.
+      </p>
+
+      <h2>3. Propiedad Intelectual</h2>
+      <p>
+        Todo el contenido de este sitio web, incluyendo textos, imágenes, gráficos, logotipos y diseño, es
+        propiedad de {siteConfig.name} o de sus respectivos autores y está protegido por las leyes de
+        propiedad intelectual vigentes en Chile.
+      </p>
+
+      <h2>4. Política de Privacidad</h2>
+      <p>
+        En {siteConfig.name} nos comprometemos a proteger la privacidad de nuestros pacientes y usuarios.
+        Los datos personales recopilados a través de este sitio web o de nuestros canales de comunicación
+        serán tratados de conformidad con la legislación chilena vigente en materia de protección de datos personales.
+      </p>
+
+      <h3>4.1 Datos Recopilados</h3>
+      <p>Podemos recopilar los siguientes tipos de información:</p>
+      <ul>
+        <li>Datos de contacto (nombre, teléfono, correo electrónico) proporcionados voluntariamente al comunicarse con nosotros.</li>
+        <li>Información de navegación y uso del sitio web mediante cookies y tecnologías similares.</li>
+        <li>Datos de salud proporcionados durante consultas médicas, sujetos a confidencialidad médico-paciente.</li>
+      </ul>
+
+      <h3>4.2 Uso de los Datos</h3>
+      <p>Los datos personales recopilados se utilizan exclusivamente para:</p>
+      <ul>
+        <li>Responder consultas y solicitudes de información.</li>
+        <li>Agendar y gestionar citas médicas.</li>
+        <li>Brindar atención médica personalizada.</li>
+        <li>Mejorar la experiencia de uso de nuestro sitio web.</li>
+        <li>Enviar información relevante sobre nuestros servicios, previo consentimiento del usuario.</li>
+      </ul>
+
+      <h3>4.3 Protección de Datos</h3>
+      <p>
+        Implementamos medidas técnicas y organizativas para proteger los datos personales contra acceso no
+        autorizado, pérdida o alteración. La información médica se maneja bajo estrictos protocolos de
+        confidencialidad.
+      </p>
+
+      <h2>5. Cookies</h2>
+      <p>
+        Este sitio web utiliza cookies y tecnologías de seguimiento para mejorar la experiencia del usuario
+        y analizar el tráfico del sitio. Al continuar navegando, acepta el uso de estas tecnologías.
+      </p>
+
+      <h2>6. Comunicaciones por WhatsApp</h2>
+      <p>
+        Nuestro canal de WhatsApp utiliza un asistente virtual para brindar información inicial sobre
+        procedimientos y agendar evaluaciones. Las conversaciones pueden ser almacenadas para mejorar la
+        calidad del servicio. La información proporcionada a través de este canal está sujeta a las mismas
+        políticas de privacidad descritas en este documento.
+      </p>
+
+      <h2>7. Limitación de Responsabilidad</h2>
+      <p>
+        {siteConfig.name} no garantiza la disponibilidad continua e ininterrumpida del sitio web.
+        La información publicada puede ser actualizada o modificada sin previo aviso.
+      </p>
+
+      <h2>8. Legislación Aplicable</h2>
+      <p>
+        Estos términos y condiciones se rigen por las leyes de la República de Chile. Cualquier controversia
+        será sometida a los tribunales competentes de Santiago.
+      </p>
+
+      <h2>9. Contacto</h2>
+      <p>
+        Para consultas relacionadas con estos términos, condiciones o nuestra política de privacidad, puede contactarnos a través de:
+      </p>
+      <ul>
+        <li>Correo electrónico: <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a></li>
+        <li>Teléfono: <a href={siteConfig.contact.phoneHref}>{siteConfig.contact.phone}</a></li>
+        <li>WhatsApp: <a href={siteConfig.contact.whatsappHref}>{siteConfig.contact.whatsapp}</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

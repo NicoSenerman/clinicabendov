@@ -1,0 +1,27 @@
+---
+import ProcedureLayout from '../../layouts/ProcedureLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const procedures = await getCollection('procedimientos-faciales');
+  return procedures.map((proc) => ({
+    params: { slug: proc.data.slug },
+    props: { procedure: proc },
+  }));
+}
+
+const { procedure } = Astro.props;
+const { Content } = await render(procedure);
+---
+
+<ProcedureLayout
+  title={procedure.data.title}
+  description={procedure.data.description}
+  seoTitle={procedure.data.seoTitle}
+  seoDescription={procedure.data.seoDescription}
+  heroImage={procedure.data.heroImage}
+  category="faciales"
+  relatedPost={procedure.data.relatedPost}
+>
+  <Content />
+</ProcedureLayout>

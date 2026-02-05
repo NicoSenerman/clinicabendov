@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "clinica-bendov",
+  "compatibility_date": "2026-02-01",
+  "pages_build_output_dir": "./dist",
+
+  // Static assets served from Cloudflare Pages
+  "assets": {
+    "directory": "./dist"
+  }
+}

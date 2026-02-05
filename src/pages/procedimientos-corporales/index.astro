@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProcedureCard from '../../components/ProcedureCard.astro';
+import { getCollection } from 'astro:content';
+
+const procedures = await getCollection('procedimientos-corporales');
+const sorted = procedures.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+---
+
+<BaseLayout
+  title="Procedimientos Corporales"
+  description="Logra la figura que deseas con nuestros procedimientos corporales. Liposucción Vaser, abdominoplastia, aumento mamario y más."
+>
+  <section class="relative overflow-hidden bg-primary-950 pt-32 pb-20 md:pt-40 md:pb-28">
+    <img src="/images/site/cat-corporales.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" loading="eager" decoding="async" />
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-900/80 to-primary-800/70" />
+    <div class="relative mx-auto max-w-4xl px-6 text-center">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-primary-300">Bendov Clínica Estética</p>
+      <h1 class="font-display text-3xl font-bold text-white md:text-5xl">Procedimientos Corporales</h1>
+      <p class="mt-4 text-lg text-primary-200 md:text-xl">
+        Nuestra misión es brindar los mejores procedimientos y atención médica
+        especializada para lograr la figura que deseas.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-6 py-16 md:py-24">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map((proc) => (
+        <ProcedureCard
+          title={proc.data.title}
+          href={`/procedimientos-corporales/${proc.data.slug}/`}
+          description={proc.data.description}
+          image={proc.data.thumbnailImage}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

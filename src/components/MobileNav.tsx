@@ -1,0 +1,183 @@
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import type { NavItem } from '../data/navigation';
+
+interface Props {
+  navigation: NavItem[];
+  whatsappHref: string;
+}
+
+export default function MobileNav({ navigation, whatsappHref }: Props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const [mounted, setMounted] = useState(false);
+
+  // Need to wait for client mount before using portals
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  const toggleExpanded = (label: string) => {
+    setExpandedItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(label)) {
+        next.delete(label);
+      } else {
+        next.add(label);
+      }
+      return next;
+    });
+  };
+
+  const panel = (
+    <>
+      {/* Overlay */}
+      <div
+        className={`fixed inset-0 z-[9998] bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
+          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Slide-out panel */}
+      <div
+        className={`fixed inset-y-0 left-0 z-[9999] w-full max-w-sm transform bg-white shadow-2xl transition-transform duration-300 ease-out ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        {/* Panel header */}
+        <div className="flex items-center justify-between border-b border-neutral-100 px-6 py-4">
+          <span className="font-display text-lg font-bold text-primary-900">Menú</span>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800"
+            aria-label="Cerrar menú"
+          >
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex h-[calc(100%-65px)] flex-col overflow-y-auto px-6 pb-6 pt-4">
+          <nav className="flex-1">
+            <ul className="space-y-1">
+              {navigation.map((item) => (
+                <li key={item.label}>
+                  {item.children ? (
+                    <div>
+                      <button
+                        onClick={() => toggleExpanded(item.label)}
+                        className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-base font-medium text-neutral-800 transition-colors hover:bg-neutral-50"
+                      >
+                        {item.label}
+                        <svg
+                          className={`h-4 w-4 text-neutral-400 transition-transform duration-200 ${
+                            expandedItems.has(item.label) ? 'rotate-180' : ''
+                          }`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-200 ${
+                          expandedItems.has(item.label) ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <ul className="ml-4 space-y-0.5 border-l-2 border-neutral-100 py-1">
+                          {item.children.map((child) => (
+                            <li key={child.label}>
+                              <a
+                                href={child.href}
+                                className="block rounded-lg px-4 py-2 text-sm text-neutral-600 transition-colors hover:bg-neutral-50 hover:text-primary-700"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {child.label}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="block rounded-lg px-3 py-3 text-base font-medium text-neutral-800 transition-colors hover:bg-neutral-50"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* CTA */}
+          <div className="mt-6 border-t border-neutral-100 pt-6">
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25d366] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#20bd5a]"
+            >
+              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z" />
+              </svg>
+              Agenda tu Evaluación
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+
+  return (
+    <>
+      {/* Hamburger button — stays in the header */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="relative z-[10000] flex h-10 w-10 items-center justify-center rounded-lg transition-colors hover:bg-neutral-100"
+        aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
+        aria-expanded={isOpen}
+      >
+        <div className="flex w-5 flex-col gap-1">
+          <span
+            className={`block h-0.5 rounded-full bg-neutral-800 transition-all duration-300 ${
+              isOpen ? 'translate-y-1.5 rotate-45' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 rounded-full bg-neutral-800 transition-all duration-300 ${
+              isOpen ? 'opacity-0' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 rounded-full bg-neutral-800 transition-all duration-300 ${
+              isOpen ? '-translate-y-1.5 -rotate-45' : ''
+            }`}
+          />
+        </div>
+      </button>
+
+      {/* Portal: render overlay + panel at document.body root */}
+      {mounted && createPortal(panel, document.body)}
+    </>
+  );
+}
