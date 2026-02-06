@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProcedureCard from '../components/ProcedureCard.astro';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon.astro';
 import { siteConfig } from '../data/site';
 
 const procedureCategories = [
@@ -32,14 +33,44 @@ const procedureCategories = [
 >
   <!-- Hero -->
   <section class="relative overflow-hidden bg-primary-950 pt-32 pb-24 md:pt-44 md:pb-36">
-    <img
-      src="/images/site/hero-home.webp"
-      alt=""
-      class="absolute inset-0 h-full w-full object-cover opacity-20"
-      loading="eager"
-      decoding="async"
-    />
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-900/80 to-primary-800/70" />
+    <!-- Soft abstract silhouette curves -->
+    <svg class="absolute inset-0 h-full w-full" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="curve-a" x1="0" y1="0.3" x2="1" y2="0.7">
+          <stop offset="0%" stop-color="#59BAE6" stop-opacity="0" />
+          <stop offset="30%" stop-color="#59BAE6" stop-opacity="0.07" />
+          <stop offset="70%" stop-color="#88c3da" stop-opacity="0.05" />
+          <stop offset="100%" stop-color="#3695c0" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="curve-b" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#88c3da" stop-opacity="0" />
+          <stop offset="25%" stop-color="#3695c0" stop-opacity="0.09" />
+          <stop offset="60%" stop-color="#59BAE6" stop-opacity="0.06" />
+          <stop offset="100%" stop-color="#2d7ba3" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="curve-c" x1="0.2" y1="1" x2="0.8" y2="0">
+          <stop offset="0%" stop-color="#2d7ba3" stop-opacity="0" />
+          <stop offset="40%" stop-color="#59BAE6" stop-opacity="0.05" />
+          <stop offset="100%" stop-color="#b8dbe9" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+
+      <!-- Large soft curve — like the arch of a shoulder/neck, right side -->
+      <path d="M900,-80 C1050,50 1150,250 1100,450 C1050,600 950,700 800,780" stroke="url(#curve-a)" stroke-width="120" fill="none" stroke-linecap="round" />
+
+      <!-- Gentle S-curve — like the contour of a torso, left side -->
+      <path d="M-100,100 C150,150 300,400 250,550 C200,680 50,750 -100,780" stroke="url(#curve-b)" stroke-width="150" fill="none" stroke-linecap="round" />
+
+      <!-- Flowing curve across the middle — connects the composition -->
+      <path d="M-50,650 C300,500 500,300 750,320 C1000,340 1200,450 1500,350" stroke="url(#curve-a)" stroke-width="80" fill="none" stroke-linecap="round" />
+
+      <!-- Delicate upper accent -->
+      <path d="M400,-50 C500,80 650,200 850,180 C1050,160 1200,50 1440,-30" stroke="url(#curve-c)" stroke-width="60" fill="none" stroke-linecap="round" />
+
+      <!-- Subtle circle — like a soft light or a face outline -->
+      <circle cx="1100" cy="200" r="200" fill="none" stroke="#59BAE6" stroke-width="1" opacity="0.06" />
+      <circle cx="1100" cy="200" r="160" fill="none" stroke="#88c3da" stroke-width="0.5" opacity="0.04" />
+    </svg>
 
     <div class="relative mx-auto max-w-6xl px-6">
       <div class="mx-auto max-w-3xl text-center">
@@ -48,7 +79,7 @@ const procedureCategories = [
         </p>
         <h1 class="font-display text-4xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
           Recupera tu
-          <span class="text-accent-400">confianza</span>
+          <span class="text-primary-400">confianza</span>
         </h1>
         <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-200 md:text-xl">
           Nuestra misión es brindar los mejores procedimientos y atención médica
@@ -61,11 +92,9 @@ const procedureCategories = [
             rel="noopener noreferrer"
             data-gtm="cta-whatsapp"
             data-gtm-location="homepage-hero"
-            class="inline-flex items-center gap-2 rounded-full bg-accent-500 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-accent-600 hover:shadow-xl"
+            class="inline-flex items-center gap-2 rounded-full bg-primary-600 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary-700 hover:shadow-xl"
           >
-            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z" />
-            </svg>
+            <WhatsAppIcon class="h-5 w-5" />
             Agenda tu Evaluación Gratuita
           </a>
           <a
@@ -104,26 +133,26 @@ const procedureCategories = [
   </section>
 
   <!-- About / Trust section -->
-  <section class="bg-neutral-50 py-24">
+  <section class="bg-primary-950 py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.15em] text-primary-600">Sobre Nosotros</p>
-          <h2 class="mt-2 font-display text-3xl font-bold text-neutral-950 md:text-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.15em] text-primary-400">Sobre Nosotros</p>
+          <h2 class="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
             Más de una década de experiencia en medicina estética
           </h2>
-          <p class="mt-6 text-lg leading-relaxed text-neutral-600">
+          <p class="mt-6 text-lg leading-relaxed text-primary-200">
             Somos una clínica de medicina estética dedicada a resolver diferentes
             necesidades de nuestros pacientes tanto mujeres como hombres. Nuestros
             principales procedimientos son Faciales, Corporales, Ginecológicos y Hormonales.
           </p>
-          <p class="mt-4 text-lg leading-relaxed text-neutral-600">
+          <p class="mt-4 text-lg leading-relaxed text-primary-200">
             Confía tu belleza a los mejores. Te acompañamos de principio a fin con una
             atención personalizada y resultados que hablan por sí solos.
           </p>
           <a
             href="/sobre-nosotros/"
-            class="mt-8 inline-flex items-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-700"
+            class="mt-8 inline-flex items-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-500"
           >
             Conoce más sobre nosotros
             <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -197,9 +226,7 @@ const procedureCategories = [
         data-gtm-location="homepage-bottom-cta"
         class="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-semibold text-primary-700 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
       >
-        <svg class="h-5 w-5 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z" />
-        </svg>
+        <WhatsAppIcon class="h-5 w-5 text-primary-600" />
         Escríbenos por WhatsApp
       </a>
     </div>
