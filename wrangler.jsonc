@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "clinica-bendov",
+  "name": "clinicabendov",
   "compatibility_date": "2026-02-01",
 
   // Static assets served via Workers
