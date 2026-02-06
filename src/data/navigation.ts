@@ -27,7 +27,7 @@ export const mainNavigation: NavItem[] = [
       { label: 'Lifting Facial', href: '/procedimientos-faciales/lifting-facial/' },
       { label: 'Ver todos →', href: '/procedimientos-faciales/' },
       { label: 'Íntimos', href: '/procedimientos-intimos/', heading: true },
-      { label: 'Rejuvenecimiento Láser CO2', href: '/procedimientos-intimos/rejuvenecimiento-laser-co2/' },
+      { label: 'Rejuvenecimiento Láser CO2', href: '/procedimientos-intimos/rejuvenecimiento-intimo-laser-co2/' },
       { label: 'Labioplastia Láser', href: '/procedimientos-intimos/labioplastia-laser/' },
       { label: 'Vaginoplastia', href: '/procedimientos-intimos/vaginoplastia/' },
       { label: 'Ver todos →', href: '/procedimientos-intimos/' },
@@ -85,7 +85,7 @@ export const mobileNavigation: NavItem[] = [
     label: 'Procedimientos Íntimos',
     href: '/procedimientos-intimos/',
     children: [
-      { label: 'Rejuvenecimiento Íntimo Láser CO2', href: '/procedimientos-intimos/rejuvenecimiento-laser-co2/' },
+      { label: 'Rejuvenecimiento Íntimo Láser CO2', href: '/procedimientos-intimos/rejuvenecimiento-intimo-laser-co2/' },
       { label: 'Labioplastia Láser', href: '/procedimientos-intimos/labioplastia-laser/' },
       { label: 'Lifting Labios Mayores', href: '/procedimientos-intimos/lifting-labios-mayores/' },
       { label: 'Plasma Rico en Plaquetas Íntimo', href: '/procedimientos-intimos/plasma-rico-en-plaquetas-intimo/' },

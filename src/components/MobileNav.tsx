@@ -135,6 +135,8 @@ export default function MobileNav({ navigation, whatsappHref }: Props) {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              data-gtm="cta-whatsapp"
+              data-gtm-location="mobile-nav"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25d366] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#20bd5a]"
             >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
