@@ -29,5 +29,3 @@ Es importante utilizar una faja compresiva durante el postoperatorio para asegur
 Si al realizar los exámenes preoperatorios se comprueba que el agrandamiento del pecho se debe solo a la acumulación de grasa, el paciente puede optar por una **minilipo de pectoral**, también conocida como pseudoginecomastia. Este procedimiento elimina la grasa mediante liposucción, sin necesidad de extraer la glándula mamaria.
 
 **¿Quieres saber más?**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

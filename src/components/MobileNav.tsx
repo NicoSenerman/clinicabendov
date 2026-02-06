@@ -59,7 +59,7 @@ export default function MobileNav({ navigation, whatsappHref }: Props) {
       >
         {/* Panel header */}
         <div className="flex items-center justify-between border-b border-neutral-100 px-6 py-4">
-          <span className="font-display text-lg font-bold text-primary-900">Menú</span>
+          <img src="/images/site/logo-bendov.png" alt="Bendov Clínica Estética" className="h-7 w-auto" />
           <button
             onClick={() => setIsOpen(false)}
             className="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800"

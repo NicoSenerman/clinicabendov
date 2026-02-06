@@ -10,6 +10,7 @@ interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  keywords?: string;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   publishedTime,
   modifiedTime,
   noindex = false,
+  keywords,
 } = Astro.props;
 
 const pageTitle = title
@@ -34,7 +36,11 @@ const ogImage = image.startsWith('http') ? image : new URL(image, siteConfig.url
 <!-- Primary Meta Tags -->
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
-{noindex && <meta name="robots" content="noindex, nofollow" />}
+{keywords && <meta name="keywords" content={keywords} />}
+{noindex
+  ? <meta name="robots" content="noindex, nofollow" />
+  : <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+}
 
 <!-- Canonical -->
 <link rel="canonical" href={canonicalUrl} />

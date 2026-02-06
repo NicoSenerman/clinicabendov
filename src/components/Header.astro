@@ -34,9 +34,14 @@ import MobileNav from './MobileNav';
       <div class="lg:hidden">
         <MobileNav client:load navigation={mobileNavigation} whatsappHref={siteConfig.contact.whatsappHref} />
       </div>
-      <a href="/" class="flex items-center gap-2 lg:gap-3">
-        <span class="font-display text-xl font-bold text-primary-900 lg:text-2xl">Bendov</span>
-        <span class="hidden text-xs font-medium uppercase tracking-widest text-neutral-500 md:block">Clínica Estética</span>
+      <a href="/">
+        <img
+          src="/images/site/logo-bendov.png"
+          alt="Bendov Clínica Estética"
+          class="h-8 w-auto lg:h-10"
+          width="300"
+          height="101"
+        />
       </a>
     </div>
 

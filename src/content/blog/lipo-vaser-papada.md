@@ -14,9 +14,6 @@ thumbnailImage: "/images/blog/lipo-vaser-papada.webp"
 draft: false
 ---
 
-***Por Dr. David Ben-Dov, Cirujano especialista en Liposucción*
-Lipo Vaser Papada: Perfil Más Definido, Rostro Más Liviano
-
 ¿Te molesta la papada al verte en el espejo o en fotos? No estás solo. La grasa acumulada bajo el mentón es una de las zonas que más incomoda a mis pacientes, incluso en personas delgadas o jóvenes. Lo bueno es que hoy contamos con soluciones eficaces y poco invasivas como la Lipo Vaser de papada. En este artículo te cuento en qué consiste este procedimiento y por qué puede ser una excelente alternativa para redefinir tu perfil facial.
 
 ### ¿Qué es la Lipo Vaser Papada?

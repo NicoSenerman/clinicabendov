@@ -40,5 +40,3 @@ Es un procedimiento seguro y eficaz que ha sido realizado por miles de personas 
 Si estás buscando un procedimiento para afinar tu rostro, mejorar la definición del pómulo o corregir una asimetría facial, puede ser una buena opción para ti. Sin embargo, es importante que consultes con un cirujano plástico facial para que te asesore sobre si este procedimiento es adecuado para ti.
 
 **En nuestra clínica, contamos con un equipo de expertos en la bichectomía. Te ofrecemos un tratamiento personalizado y seguro, con resultados naturales y duraderos**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

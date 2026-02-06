@@ -13,8 +13,6 @@ thumbnailImage: "/images/blog/rejuvenecimiento-vaginal-laser.webp"
 draft: false
 ---
 
-**Por Dr. David Ben-Dov – Médico Cirujano Ginecólogo, Universidad de Chile**
-**Rejuvenecimiento vaginal con láser CO₂**
 A lo largo de los años, he podido ver cómo muchas mujeres enfrentan cambios en su zona íntima debido al paso del tiempo, los partos o la menopausia. Estos cambios pueden generar incomodidad, afectar la autoestima y hasta impactar la calidad de vida. Por suerte, hoy contamos con tecnologías avanzadas, como el láser fraccionado de CO2, que nos permiten mejorar la funcionalidad y estética vaginal de manera segura y efectiva, sin recurrir a cirugía.
 
 ### ¿En qué consiste este tratamiento?

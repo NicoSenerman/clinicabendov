@@ -51,5 +51,3 @@ Solicita una cita gratuita con nuestros especialistas para obtener un diagnósti
 - Se realiza en sesiones de corta duración.
 - Los resultados son visibles de forma gradual.
 - Es un tratamiento seguro y eficaz.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

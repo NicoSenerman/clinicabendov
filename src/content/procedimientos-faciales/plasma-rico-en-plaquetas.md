@@ -13,10 +13,10 @@ draft: false
 ---
 
 ## Plasma Rico en Plaquetas (PRP): Un Concentrado de Rejuvenecimiento
-### Descripción:
+### Descripción
 El Plasma Rico en Plaquetas (PRP) es un componente de la sangre que contiene una alta concentración de factores de crecimiento y proteínas que estimulan la regeneración celular y la producción de colágeno. Se obtiene mediante un proceso de centrifugación de la sangre del propio paciente.
 
-### Beneficios del PRP:
+### Beneficios del PRP
 - **Rejuvenecimiento facial:** Reduce las arrugas, líneas de expresión y mejora la textura de la piel.
 - **Mejora la cicatrización:** Acelera la cicatrización de heridas y reduce la inflamación.
 - **Rejuvenecimiento capilar:** Fortalece el cabello, reduce la caída del cabello y estimula el crecimiento.
@@ -24,18 +24,16 @@ El Plasma Rico en Plaquetas (PRP) es un componente de la sangre que contiene una
 - **Mejora de la artrosis:** Reduce el dolor y la inflamación en las articulaciones.
 - **Mejora del rendimiento deportivo:** Acelera la recuperación de lesiones musculares y tendinosas.
 
-### Procedimiento:
+### Procedimiento
 - Se extrae una pequeña cantidad de sangre del paciente.
 - La sangre se centrifuga para obtener el PRP.
 - El PRP se aplica en la zona a tratar mediante una inyección o un procedimiento tópico.
 - El procedimiento es ambulatorio y no requiere anestesia.
 
-### PRP es ideal para:
+### PRP es ideal para
 - Personas que buscan un tratamiento natural y efectivo para el rejuvenecimiento facial.
 - Personas que desean mejorar la cicatrización de heridas o lesiones.
 - Personas que sufren de alopecia o caída del cabello.
 - Mujeres que experimentan sequedad vaginal o atrofia vaginal.
 - Personas que sufren de artrosis.
 - Deportistas que buscan una recuperación más rápida de lesiones.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

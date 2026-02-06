@@ -53,8 +53,6 @@ Desde las primeras semanas ya puedes notar mejoras en lubricación, tono y sensi
 
 Los efectos pueden durar **hasta 2 años**, dependiendo de tu estilo de vida.
 
-### 💙 Tu salud íntima también importa
+### Tu salud íntima también importa
 
 En Clínica Bendov abordamos estos temas con total privacidad, respeto y profesionalismo. Agenda una **evaluación gratuita** con nuestro equipo médico y descubre si este tratamiento es para ti.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

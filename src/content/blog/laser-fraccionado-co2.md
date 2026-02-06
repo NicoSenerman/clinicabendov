@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/laser-fraccionado-co2.webp"
 draft: false
 ---
 
--Por Dr. David Ben-Dov – Médico Cirujano, Especialista en Cirugía Estética
-
-Tratamiento Médico con Láser Fraccionado CO2: Indicado para Arrugas, Manchas, Cicatrices y Más
 Hoy quiero hablarte de un tratamiento que muchas veces marca un antes y un después en la piel de quienes lo prueban: el [**láser fraccionado CO2**](https://clinicabendov.cl/laser_fraccionado_de_co2/).
 
 Tal vez ya hayas escuchado de él o incluso alguien te lo haya recomendado. Y no es para menos: este procedimiento combina ciencia, tecnología y precisión médica para lograr una verdadera **renovación cutánea**.

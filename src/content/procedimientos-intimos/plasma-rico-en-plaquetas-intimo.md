@@ -14,11 +14,11 @@ draft: false
 
 ## Plasma Rico en Plaquetas Íntimo: Rejuvenecimiento y Bienestar
 
-## Descripción:
+## Descripción
 
 El Plasma Rico en Plaquetas (PRP) Íntimo es un tratamiento innovador que utiliza los propios recursos del cuerpo para mejorar la salud y el bienestar de la zona genital femenina. El PRP se obtiene de la sangre del paciente y contiene una alta concentración de factores de crecimiento que estimulan la regeneración celular y la producción de colágeno.
 
-## Beneficios:
+## Beneficios
 
 - **Rejuvenecimiento vaginal:** Aumento de la tonicidad, elasticidad y lubricación vaginal.
 - **Mejora de la sequedad vaginal:** Disminución de los síntomas de la atrofia vaginal, como ardor, picazón y dolor durante las relaciones sexuales.
@@ -27,14 +27,14 @@ El Plasma Rico en Plaquetas (PRP) Íntimo es un tratamiento innovador que utiliz
 - **Cicatrización postparto:** Acelera la recuperación y reduce el dolor y la inflamación.
 - **Mejora de la disfunción sexual femenina:** Aumento de la libido y la satisfacción sexual.
 
-## Procedimiento:
+## Procedimiento
 
 - Se extrae una pequeña cantidad de sangre del paciente.
 - La sangre se centrifuga para obtener el PRP.
 - El PRP se aplica en la zona genital mediante una inyección o un procedimiento tópico.
 - El procedimiento es ambulatorio y no requiere anestesia.
 
-## Plasma Rico en Plaquetas Íntimo es ideal para:
+## Plasma Rico en Plaquetas Íntimo es ideal para
 
 **Mujeres:**
 
@@ -44,5 +44,3 @@ El Plasma Rico en Plaquetas (PRP) Íntimo es un tratamiento innovador que utiliz
 - Que buscan mejorar su experiencia sexual.
 - Que desean una recuperación más rápida después del parto.
 - Que padecen disfunción sexual femenina.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

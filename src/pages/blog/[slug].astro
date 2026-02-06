@@ -22,6 +22,41 @@ function formatDate(date: Date): string {
   });
 }
 
+// Estimate reading time (~200 words/min for Spanish)
+const wordCount = post.body?.split(/\s+/).length ?? 0;
+const readingTime = Math.max(1, Math.ceil(wordCount / 200));
+
+// Author data: normalize names and map to real photos
+const authorMap: Record<string, { name: string; photo: string; role: string }> = {
+  'david bendov': {
+    name: 'Dr. David Bendov',
+    photo: '/images/site/dr-david-bendov.webp',
+    role: 'Cirujano Plástico',
+  },
+  'myriam colodro': {
+    name: 'Dra. Myriam Colodro',
+    photo: '/images/site/dra-myriam-colodro.webp',
+    role: 'Médico Estético',
+  },
+  'dr eduardo costa edwards': {
+    name: 'Dr. Eduardo Costa Edwards',
+    photo: '/images/site/dr-eduardo-costa.webp',
+    role: 'Ginecólogo Estético',
+  },
+  'mabelsuarez': {
+    name: 'Dra. Mabel Suárez',
+    photo: '/images/site/dra-mabel-suarez.webp',
+    role: 'Oftalmóloga Oculoplástica',
+  },
+};
+
+const authorKey = post.data.author.toLowerCase().trim();
+const author = authorMap[authorKey] ?? {
+  name: post.data.author,
+  photo: '',
+  role: siteConfig.name,
+};
+
 // Get related posts (same category, excluding current)
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const relatedPosts = allPosts
@@ -37,132 +72,149 @@ const relatedPosts = allPosts
   type="article"
   publishedTime={post.data.date.toISOString()}
 >
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-primary-950 pt-32 pb-16 md:pt-40 md:pb-20">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800" />
-    <div class="relative mx-auto max-w-4xl px-6 text-center">
-      {post.data.categories.length > 0 && (
-        <div class="mb-4 flex flex-wrap justify-center gap-2">
-          {post.data.categories.map((cat: string) => (
-            <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-primary-200">
-              {cat}
-            </span>
-          ))}
-        </div>
-      )}
-      <h1 class="font-display text-3xl font-bold text-white md:text-4xl lg:text-5xl">{post.data.title}</h1>
-      <div class="mt-6 flex items-center justify-center gap-4 text-primary-300">
-        <span class="text-sm">{post.data.author}</span>
-        <span class="text-primary-500">|</span>
-        <time datetime={post.data.date.toISOString()} class="text-sm">
+  <!-- BlogPosting Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "image": post.data.thumbnailImage ? new URL(post.data.thumbnailImage, siteConfig.url).href : undefined,
+    "datePublished": post.data.date.toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": author.name,
+      "jobTitle": author.role,
+      "image": author.photo ? new URL(author.photo, siteConfig.url).href : undefined,
+      "worksFor": {
+        "@type": "Organization",
+        "name": siteConfig.name,
+      },
+    },
+    "publisher": {
+      "@id": `${siteConfig.url}/#organization`,
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": new URL(`/blog/${post.data.slug}/`, siteConfig.url).href,
+    },
+    "inLanguage": "es",
+  })} />
+
+  <!-- Editorial Header -->
+  <article class="pt-32 md:pt-40">
+    <header class="mx-auto max-w-3xl px-6 text-center">
+      <!-- Category + Date row -->
+      <div class="flex items-center justify-center gap-3 text-sm">
+        {post.data.categories.length > 0 && (
+          <span class="font-semibold uppercase tracking-[0.12em] text-primary-600">
+            {post.data.categories[0]}
+          </span>
+        )}
+        {post.data.categories.length > 0 && (
+          <span class="text-neutral-300">|</span>
+        )}
+        <time datetime={post.data.date.toISOString()} class="text-neutral-400">
           {formatDate(post.data.date)}
         </time>
       </div>
-    </div>
-  </section>
 
-  <!-- Article Content -->
-  <article class="mx-auto max-w-3xl px-6 py-12 md:py-20">
-    {post.data.heroImage && (
-      <div class="mb-10 overflow-hidden rounded-2xl">
-        <img
-          src={post.data.heroImage}
-          alt={post.data.title}
-          class="w-full object-cover"
-          loading="eager"
-        />
+      <!-- Title -->
+      <h1 class="mt-5 font-display text-3xl font-bold leading-tight text-neutral-950 md:text-4xl lg:text-[2.75rem] lg:leading-[1.15]">
+        {post.data.title}
+      </h1>
+
+      <!-- Description -->
+      <p class="mt-5 text-lg leading-relaxed text-neutral-500 md:text-xl">
+        {post.data.description}
+      </p>
+
+      <!-- Author & Reading time -->
+      <div class="mt-8 flex items-center justify-center gap-3">
+        {author.photo ? (
+          <img
+            src={author.photo}
+            alt={author.name}
+            class="h-10 w-10 rounded-full object-cover"
+            loading="eager"
+          />
+        ) : (
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 text-primary-600">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+          </div>
+        )}
+        <div class="text-left text-sm">
+          <p class="font-medium text-neutral-700">{author.name}</p>
+          <p class="text-neutral-400">{readingTime} min de lectura</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Featured Image -->
+    {post.data.thumbnailImage && (
+      <div class="mx-auto mt-10 max-w-4xl px-6">
+        <div class="overflow-hidden rounded-2xl">
+          <img
+            src={post.data.thumbnailImage}
+            alt={post.data.title}
+            class="w-full object-cover"
+            loading="eager"
+          />
+        </div>
       </div>
     )}
 
-    <div class="prose prose-lg prose-neutral max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-neutral-950 prose-p:leading-relaxed prose-p:text-neutral-600 prose-a:text-primary-700 prose-a:no-underline hover:prose-a:underline prose-strong:text-neutral-800 prose-img:rounded-xl prose-li:text-neutral-600">
-      <Content />
+    <!-- Divider -->
+    <div class="mx-auto mt-10 max-w-3xl px-6">
+      <div class="border-t border-neutral-100" />
     </div>
 
-    <!-- Author & Share -->
-    <div class="mt-12 border-t border-neutral-200 pt-8">
-      <div class="flex items-center gap-4">
-        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100 text-primary-600">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-          </svg>
-        </div>
-        <div>
-          <p class="font-display font-semibold text-neutral-900">{post.data.author}</p>
-          <p class="text-sm text-neutral-500">{siteConfig.name}</p>
-        </div>
+    <!-- Article Content -->
+    <div class="mx-auto max-w-2xl px-6 py-12 md:py-16">
+      <div class="blog-prose prose prose-lg prose-neutral max-w-none">
+        <Content />
       </div>
     </div>
+
+
   </article>
 
   <!-- Related Posts -->
   {relatedPosts.length > 0 && (
-    <section class="bg-neutral-50 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-6">
-        <div class="text-center">
-          <p class="text-sm font-semibold uppercase tracking-[0.15em] text-primary-600">Sigue leyendo</p>
-          <h2 class="mt-2 font-display text-3xl font-bold text-neutral-950 md:text-4xl">
-            Artículos relacionados
-          </h2>
-        </div>
+    <aside class="border-t border-neutral-100 py-16 md:py-20">
+      <div class="mx-auto max-w-4xl px-6">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400">
+          Sigue leyendo
+        </p>
 
-        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="mt-10 divide-y divide-neutral-100">
           {relatedPosts.map((related) => (
             <a
               href={`/blog/${related.data.slug}/`}
-              class="group block overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-neutral-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              class="group flex gap-5 py-6 transition-colors first:pt-0 last:pb-0"
             >
-              {related.data.thumbnailImage ? (
-                <div class="aspect-[16/10] overflow-hidden">
+              {related.data.thumbnailImage && (
+                <div class="hidden shrink-0 overflow-hidden rounded-lg sm:block sm:h-20 sm:w-28">
                   <img
                     src={related.data.thumbnailImage}
                     alt={related.data.title}
-                    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
                 </div>
-              ) : (
-                <div class="aspect-[16/10] bg-gradient-to-br from-primary-100 to-primary-200" />
               )}
-              <div class="p-5">
-                <h3 class="font-display text-lg font-semibold leading-snug text-neutral-900 transition-colors group-hover:text-primary-700">
+              <div class="flex flex-col justify-center">
+                <h3 class="font-display text-base font-semibold text-neutral-900 transition-colors group-hover:text-primary-700">
                   {related.data.title}
                 </h3>
-                <p class="mt-2 line-clamp-2 text-sm text-neutral-500">{related.data.description}</p>
-                <span class="mt-3 inline-flex items-center gap-1 text-sm font-medium text-primary-600">
-                  Leer más
-                  <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </span>
+                <p class="mt-1 line-clamp-1 text-sm text-neutral-400">{related.data.description}</p>
               </div>
             </a>
           ))}
         </div>
       </div>
-    </section>
+    </aside>
   )}
-
-  <!-- CTA -->
-  <section class="bg-primary-700 py-16">
-    <div class="mx-auto max-w-4xl px-6 text-center">
-      <h2 class="font-display text-2xl font-bold text-white md:text-3xl">
-        ¿Te interesa este procedimiento?
-      </h2>
-      <p class="mt-3 text-primary-100">
-        Agenda una evaluación gratuita y sin compromiso con nuestro equipo médico.
-      </p>
-      <a
-        href={siteConfig.contact.whatsappHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-base font-semibold text-primary-700 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
-      >
-        <svg class="h-5 w-5 text-[#25d366]" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z" />
-        </svg>
-        Agenda tu Evaluación Gratuita
-      </a>
-    </div>
-  </section>
 </BaseLayout>

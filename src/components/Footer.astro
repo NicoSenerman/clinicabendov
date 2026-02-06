@@ -11,8 +11,14 @@ const currentYear = new Date().getFullYear();
       <!-- Brand -->
       <div class="lg:col-span-1">
         <a href="/" class="inline-block">
-          <span class="font-display text-2xl font-bold text-white">Bendov</span>
-          <span class="block text-xs font-medium uppercase tracking-widest text-primary-300">Clínica Estética</span>
+          <img
+            src="/images/site/logo-bendov-white.png"
+            alt="Bendov Clínica Estética"
+            class="h-10 w-auto"
+            width="300"
+            height="101"
+            loading="lazy"
+          />
         </a>
         <p class="mt-4 text-sm leading-relaxed text-neutral-400">
           Somos una clínica de medicina estética dedicada a brindar los mejores procedimientos y atención médica especializada.
@@ -41,7 +47,7 @@ const currentYear = new Date().getFullYear();
 
       <!-- Procedimientos -->
       <div>
-        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Procedimientos</h3>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider" style="color: rgba(255,255,255,0.7);">Procedimientos</h3>
         <ul class="space-y-3">
           {footerNavigation.procedimientos.map((item) => (
             <li>
@@ -53,7 +59,7 @@ const currentYear = new Date().getFullYear();
 
       <!-- Clínica -->
       <div>
-        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Clínica</h3>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider" style="color: rgba(255,255,255,0.7);">Clínica</h3>
         <ul class="space-y-3">
           {footerNavigation.clinica.map((item) => (
             <li>
@@ -65,7 +71,7 @@ const currentYear = new Date().getFullYear();
 
       <!-- Contacto -->
       <div>
-        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Contacto</h3>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider" style="color: rgba(255,255,255,0.7);">Contacto</h3>
         <ul class="space-y-3 text-sm text-neutral-400">
           <li>
             <a href={siteConfig.contact.phoneHref} class="flex items-center gap-2 transition-colors hover:text-white">

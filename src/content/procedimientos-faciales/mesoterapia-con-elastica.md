@@ -17,7 +17,7 @@ draft: false
 ## ¿Qué es la Mesoterapia con Elástica Dorada y Plateada?
 Es un tratamiento que consiste en la aplicación de microinyecciones de ácido hialurónico y otros activos, como vitaminas, minerales y aminoácidos, en las capas profundas de la piel. Los principios activos de Elástica Dorada y Plateada estimulan la producción de colágeno y elastina, mejorando la tonicidad y el aspecto de la piel.
 
-## Beneficios:
+## Beneficios
 - **Mejora la firmeza y elasticidad de la piel.**
 - **Reduce la flacidez y las arrugas finas.**
 - **Hidrata la piel en profundidad.**
@@ -40,5 +40,3 @@ La Mesoterapia con Elástica Dorada y Plateada se realiza en sesiones ambulatori
 **Resultados:**
 
 Los resultados de la Mesoterapia con Elástica Dorada y Plateada son visibles desde las primeras sesiones. La piel se ve más firme, hidratada y luminosa. Los resultados duran varios meses, dependiendo del tipo de piel y del estilo de vida del paciente
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

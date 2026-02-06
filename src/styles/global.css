@@ -4,29 +4,31 @@
   --font-sans: 'Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
   --font-display: 'Playfair Display', 'Georgia', 'serif';
 
-  --color-primary-50: #f0f5f4;
-  --color-primary-100: #d9e8e5;
-  --color-primary-200: #b6d1cd;
-  --color-primary-300: #8ab5ae;
-  --color-primary-400: #63968e;
-  --color-primary-500: #4a7b73;
-  --color-primary-600: #3a635c;
-  --color-primary-700: #31514c;
-  --color-primary-800: #2a423e;
-  --color-primary-900: #263835;
-  --color-primary-950: #131f1d;
+  /* Primary: blue-teal from logo (#2C586C) at hue ~199 */
+  --color-primary-50: #f0f7fa;
+  --color-primary-100: #daedf4;
+  --color-primary-200: #b8dbe9;
+  --color-primary-300: #88c3da;
+  --color-primary-400: #59BAE6;
+  --color-primary-500: #3695c0;
+  --color-primary-600: #2d7ba3;
+  --color-primary-700: #2C586C;
+  --color-primary-800: #274b5c;
+  --color-primary-900: #243f4e;
+  --color-primary-950: #152835;
 
-  --color-accent-50: #fdf6ef;
-  --color-accent-100: #faeada;
-  --color-accent-200: #f4d1b4;
-  --color-accent-300: #edb384;
-  --color-accent-400: #e48c53;
-  --color-accent-500: #de7031;
-  --color-accent-600: #cf5826;
-  --color-accent-700: #ac4321;
-  --color-accent-800: #893621;
-  --color-accent-900: #6f2f1d;
-  --color-accent-950: #3c160d;
+  /* Accent: warm gold for contrast */
+  --color-accent-50: #fdf8ef;
+  --color-accent-100: #faeed9;
+  --color-accent-200: #f4dab3;
+  --color-accent-300: #edc183;
+  --color-accent-400: #e4a552;
+  --color-accent-500: #de8f30;
+  --color-accent-600: #cf7526;
+  --color-accent-700: #ac5c21;
+  --color-accent-800: #894a21;
+  --color-accent-900: #6f3e1d;
+  --color-accent-950: #3c200d;
 
   --color-neutral-50: #f8f8f8;
   --color-neutral-100: #f0f0f0;
@@ -58,45 +60,247 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  color: var(--color-neutral-950);
   line-height: 1.2;
 }
 
-/* Prose styles for content */
+/* Prose styles for procedure content */
 .prose {
   max-width: 72ch;
 }
 
+/* H2: clean section headings */
 .prose h2 {
-  margin-top: 2em;
+  margin-top: 2.5em;
   margin-bottom: 0.75em;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
   font-weight: 700;
+  color: var(--color-primary-700);
 }
 
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+/* H3: lighter subsection headings */
 .prose h3 {
-  margin-top: 1.5em;
+  margin-top: 1.75em;
   margin-bottom: 0.5em;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  color: var(--color-primary-800);
 }
 
 .prose p {
   margin-bottom: 1.25em;
+  line-height: 1.8;
 }
 
-.prose ul, .prose ol {
-  margin-bottom: 1.25em;
+/* Lists: branded markers */
+.prose ul {
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  list-style: none;
+}
+
+.prose ol {
+  margin-bottom: 1.5em;
   padding-left: 1.5em;
 }
 
-.prose li {
-  margin-bottom: 0.5em;
+.prose ul li {
+  position: relative;
+  margin-bottom: 0.625em;
+  padding-left: 1.75em;
+  line-height: 1.7;
+}
+
+/* Checkmark bullet */
+.prose ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background-color: var(--color-primary-400);
+  opacity: 0.7;
+}
+
+.prose ol li {
+  margin-bottom: 0.625em;
+  line-height: 1.7;
 }
 
 .prose strong {
   font-weight: 600;
   color: var(--color-neutral-950);
+}
+
+/* Links: branded and visible */
+.prose a {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary-300);
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.prose a:hover {
+  color: var(--color-primary-800);
+  text-decoration-color: var(--color-primary-600);
+}
+
+/* Hide duplicate CTA paragraphs that contain wa.me links at the end of markdown */
+.prose p:last-child a[href*="wa.me"],
+.prose p:last-of-type a[href*="wa.me"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.625em 1.5em;
+  margin-top: 0.5em;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #ffffff;
+  background-color: #25d366;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.prose p:last-child a[href*="wa.me"]:hover,
+.prose p:last-of-type a[href*="wa.me"]:hover {
+  background-color: #20bd5a;
+  transform: scale(1.03);
+}
+
+/* Blockquotes (if ever used) */
+.prose blockquote {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-left: 3px solid var(--color-primary-400);
+  background-color: var(--color-primary-50);
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-style: italic;
+  color: var(--color-neutral-700);
+}
+
+/* Horizontal rules */
+.prose hr {
+  margin: 2.5em 0;
+  border: none;
+  border-top: 1px solid var(--color-neutral-200);
+}
+
+/* ============================================
+   Blog-specific prose overrides
+   Gives blog posts a clean editorial feel
+   distinct from the branded procedure pages.
+   ============================================ */
+
+.blog-prose h2 {
+  color: var(--color-neutral-950);
+  font-size: 1.5rem;
+  margin-top: 2.25em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--color-neutral-100);
+}
+
+.blog-prose h3 {
+  color: var(--color-neutral-800);
+  font-size: 1.175rem;
+}
+
+.blog-prose ul li::before {
+  background-color: var(--color-neutral-400);
+  width: 0.375em;
+  height: 0.375em;
+  top: 0.65em;
+  opacity: 1;
+}
+
+.blog-prose a {
+  color: var(--color-primary-700);
+  text-decoration-color: var(--color-primary-200);
+}
+
+.blog-prose a:hover {
+  color: var(--color-primary-600);
+  text-decoration-color: var(--color-primary-500);
+}
+
+/* ============================================
+   Trustindex Google Reviews widget overrides
+   Makes the embedded widget match our design.
+   ============================================ */
+
+.trustindex-reviews .ti-widget {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.trustindex-reviews .ti-widget .ti-widget-container *  {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Review card backgrounds — match our neutral palette */
+.trustindex-reviews .ti-widget .ti-review-item > .ti-inner {
+  background-color: var(--color-neutral-50) !important;
+  border-color: var(--color-neutral-100) !important;
+  border-radius: 16px !important;
+}
+
+/* Name styling */
+.trustindex-reviews .ti-widget .ti-name {
+  color: var(--color-neutral-900) !important;
+}
+
+/* Date styling */
+.trustindex-reviews .ti-widget .ti-date {
+  color: var(--color-neutral-400) !important;
+}
+
+/* Review text */
+.trustindex-reviews .ti-widget .ti-review-content {
+  color: var(--color-neutral-600) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+/* Read more link */
+.trustindex-reviews .ti-widget .ti-read-more span {
+  color: var(--color-primary-600) !important;
+  opacity: 1 !important;
+}
+
+/* Footer rating text */
+.trustindex-reviews .ti-widget .ti-rating-text,
+.trustindex-reviews .ti-widget .ti-rating-text *,
+.trustindex-reviews .ti-widget .ti-footer,
+.trustindex-reviews .ti-widget .ti-footer * {
+  color: var(--color-neutral-600) !important;
+}
+
+/* Arrow controls */
+.trustindex-reviews .ti-widget .ti-controls .ti-next,
+.trustindex-reviews .ti-widget .ti-controls .ti-prev {
+  background-color: white !important;
+  outline-color: var(--color-neutral-200) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.trustindex-reviews .ti-widget .ti-controls .ti-next:hover,
+.trustindex-reviews .ti-widget .ti-controls .ti-prev:hover {
+  background-color: var(--color-primary-700) !important;
+  outline-color: var(--color-primary-700) !important;
+}
+
+/* Dot navigation bar */
+.trustindex-reviews .ti-widget .ti-controls-line {
+  background: var(--color-neutral-200) !important;
+}
+
+.trustindex-reviews .ti-widget .ti-controls-line .dot {
+  background: var(--color-primary-600) !important;
 }
 
 /* Smooth animations */

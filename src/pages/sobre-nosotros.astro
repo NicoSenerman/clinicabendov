@@ -112,12 +112,52 @@ const doctors = [
     ],
   },
 ];
+
+// Build Physician JSON-LD in frontmatter to avoid regex/esbuild issues in template
+const universityRegex = /universidad|university|pontificia|academia|enova/i;
+const memberRegex = /miembro|integrante|member/i;
+const memberPrefixRegex = /^(Miembro|Integrante)\s+(de\s+|del\s+)?/i;
+const afterCommaRegex = /^.*?,\s*/;
+const trailingYearRegex = /,\s*\d{4}$/;
+
+const physicianJsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": doctors.map((doctor) => ({
+    "@type": "Physician",
+    "name": doctor.name,
+    "image": new URL(doctor.image, siteConfig.url).href,
+    "jobTitle": doctor.role,
+    "description": doctor.credentials.join('. '),
+    "medicalSpecialty": doctor.specialties,
+    "alumniOf": doctor.credentials
+      .filter((c) => universityRegex.test(c))
+      .map((c) => ({
+        "@type": "EducationalOrganization",
+        "name": c.replace(afterCommaRegex, '').replace(trailingYearRegex, '').trim(),
+      })),
+    "worksFor": {
+      "@type": "MedicalClinic",
+      "@id": `${siteConfig.url}/#organization`,
+      "name": siteConfig.name,
+    },
+    "url": `${siteConfig.url}/sobre-nosotros/`,
+    "memberOf": doctor.credentials
+      .filter((c) => memberRegex.test(c))
+      .map((c) => ({
+        "@type": "MedicalOrganization",
+        "name": c.replace(memberPrefixRegex, '').trim(),
+      })),
+  })),
+});
 ---
 
 <BaseLayout
   title="Sobre Nosotros"
   description="Conoce a Bendov Clínica Estética en Las Condes, Santiago. Equipo médico especializado en procedimientos estéticos faciales, corporales e íntimos."
 >
+  <!-- Physician / Person Structured Data (E-E-A-T) -->
+  <script type="application/ld+json" set:html={physicianJsonLd} />
+
   <!-- Hero -->
   <section class="relative overflow-hidden bg-primary-950 pt-32 pb-20 md:pt-40 md:pb-28">
     <img src="/images/site/clinica-intro.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" loading="eager" decoding="async" />

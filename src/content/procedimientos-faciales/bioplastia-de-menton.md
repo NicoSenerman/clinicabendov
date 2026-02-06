@@ -36,5 +36,3 @@ La bioplastia de mentón es un procedimiento seguro y con un bajo índice de efe
 
 ### ¿Quieres lucir un perfil más armonioso y una belleza natural?
 Solicita una cita gratuita con nuestros especialistas para obtener un diagnóstico personalizado y determinar si la bioplastia de mentón es la mejor opción para ti.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

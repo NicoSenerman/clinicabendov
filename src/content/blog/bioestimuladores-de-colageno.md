@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/bioestimuladores-de-colageno.webp"
 draft: false
 ---
 
-**-Por Dra. Myriam Colodro E. – Cirujano Dentista, Especialista en Medicina Estética y Máster en Armonización Facial**
-Bioestimuladores de Colágeno: Dile adiós a la flacidez y rejuvenece de forma natural
-
 ### Estimula la formación de colágeno para una piel visiblemente más joven y saludable.
 
 A veces nos miramos al espejo y sentimos que nuestra piel ya no refleja cómo nos sentimos por dentro. Aparece esa flacidez sutil, esa pérdida de firmeza en el rostro, el cuello o incluso los brazos, que puede hacer que nos veamos más cansados, apagados… y que muchas veces afecta cómo nos sentimos con nosotros mismos o mismas.
@@ -46,7 +43,7 @@ Este tratamiento es ideal para zonas como:
 - Parte interna de los brazos o muslos
 - Glúteos (efecto lifting natural)
 
-## Beneficios que veo en mis pacientes:
+## Beneficios que veo en mis pacientes
 
 - Rejuvenecimiento visible sin perder naturalidad
 - Mejora de la **textura, firmeza y calidad** de la piel
@@ -69,7 +66,7 @@ Sí, es un tratamiento con alto perfil de seguridad, que utilizamos en medicina 
 
 Si buscas un resultado natural, sin cambiar tus facciones, y quieres verte más firme, más fresca y más vital, este tratamiento podría ser justo lo que necesitas.
 
-## 💙 Te invito a una evaluación personalizada
+## Te invito a una evaluación personalizada
 
 Hablemos de lo que te gustaría mejorar. Estoy aquí para escucharte, resolver tus dudas y acompañarte con honestidad y profesionalismo en cada etapa de tu tratamiento.
 

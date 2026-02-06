@@ -13,11 +13,7 @@ thumbnailImage: "/images/blog/rejuvenecimiento-intimo-en-la-menopausia.webp"
 draft: false
 ---
 
-**Por Dr. David Ben-Dov – Médico Cirujano Ginecólogo, Universidad de Chile**
-Menopausia sin tabúes: cómo la sinergia entre PRP, láser vaginal y carboxiterapia puede transformar la salud íntima femenina
-Rejuvenecimiento íntimo en la menopausia
-
-- La menopausia es una etapa natural en la vida de toda mujer, pero muchas veces viene acompañada de síntomas físicos que afectan profundamente la calidad de vida y el bienestar emocional. Sequedad vaginal, disminución de la sensibilidad, dolor durante las relaciones sexuales, pérdida de elasticidad y pequeñas fugas de orina son solo algunas de las manifestaciones más comunes.
+La menopausia es una etapa natural en la vida de toda mujer, pero muchas veces viene acompañada de síntomas físicos que afectan profundamente la calidad de vida y el bienestar emocional. Sequedad vaginal, disminución de la sensibilidad, dolor durante las relaciones sexuales, pérdida de elasticidad y pequeñas fugas de orina son solo algunas de las manifestaciones más comunes.
 
 Durante años, estos temas fueron considerados tabúes o minimizados, lo que ha llevado a muchas mujeres a resignarse al malestar. Hoy, sin embargo, existen alternativas terapéuticas modernas, efectivas y no invasivas que permiten abordar estos cambios de forma integral y natural.
 
@@ -31,19 +27,19 @@ Cada tratamiento actúa de forma distinta pero complementaria:
 
 ⸻
 
-### 🔬 PRP Vaginal: regeneración desde la biología propia
+### PRP Vaginal: regeneración desde la biología propia
 
 El plasma rico en plaquetas se obtiene a partir de la sangre de la paciente. Se procesa para concentrar los factores de crecimiento y luego se aplica en la zona íntima. Estos factores estimulan la regeneración del tejido vaginal, mejorando la lubricación, la firmeza y la sensibilidad de forma natural.
 
 ⸻
 
-### 💡 Láser vaginal fraccionado: estimulación de colágeno y elasticidad
+### Láser vaginal fraccionado: estimulación de colágeno y elasticidad
 
 El láser fraccionado CO2 actúa sobre la mucosa vaginal provocando una renovación celular profunda. Estimula la producción de colágeno y elastina, mejorando la elasticidad, el tono y reduciendo síntomas como la sequedad o el ardor vaginal. Además, puede tener efectos positivos sobre la incontinencia urinaria leve.
 
 ⸻
 
-### 🌬️ Carboxiterapia vaginal: oxigenación y revitalización celular
+### Carboxiterapia vaginal: oxigenación y revitalización celular
 
 Mediante la aplicación controlada de dióxido de carbono en la zona vaginal, la carboxiterapia mejora la oxigenación de los tejidos y estimula la microcirculación. Esta técnica potencia los efectos del PRP y del láser, favoreciendo una recuperación más rápida y resultados más duraderos.
 

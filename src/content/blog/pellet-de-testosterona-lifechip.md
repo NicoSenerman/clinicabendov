@@ -13,8 +13,6 @@ thumbnailImage: "/images/blog/pellet-de-testosterona-lifechip.webp"
 draft: false
 ---
 
-**Por Dr. David Ben-Dov – Médico Cirujano Ginecólogo, Universidad de Chile**
-**Más Fuerza, Más Deseo, Más Vida: Descubre el Pellet de Testosterona Lifechip**
 Hola, soy el Dr. David Ben-Dov, y si llegaste hasta aquí es porque tal vez algo ha cambiado en ti. Tal vez te sientes más cansado, con menos ganas de entrenar, menos deseo sexual o simplemente con una energía distinta a la que solías tener. No estás solo. Muchos hombres pasan por lo mismo y lo peor es que lo normalizan.
 
 La buena noticia es que no tienes por qué conformarte con sentirte menos tú. Hoy quiero contarte sobre una solución segura, cómoda y altamente efectiva que ha cambiado la vida de muchos de mis pacientes: el **pellet de testosterona Lifechip**.
@@ -89,7 +87,7 @@ Recuperar tu energía, tu fuerza y tu deseo **no es un lujo**, es una posibilida
 
 Si sientes que algo ha cambiado en tu cuerpo y en tu ánimo, te invito a agendar una evaluación gratuita en Clínica Bendov. Evaluaremos tus niveles hormonales, conversaremos sobre tus síntomas y, si corresponde, podríamos iniciar el tratamiento que te devuelva ese “tú” que extrañas.
 
-📅 Reserva tu evaluación en [https://clinicabendov.com/evaluacion](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
+� Reserva tu evaluación en [https://clinicabendov.com/evaluacion](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
 
 Dr. David Ben-Dov
 Cirujano – Clínica Bendov Estética

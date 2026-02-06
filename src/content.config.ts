@@ -11,7 +11,6 @@ const procedimientosSchema = z.object({
   seoKeywords: z.string().optional(),
   heroImage: z.string().optional(),
   thumbnailImage: z.string().optional(),
-  relatedPost: z.string().optional(),
   order: z.number().default(0),
   draft: z.boolean().default(false),
 });

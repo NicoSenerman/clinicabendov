@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/skinvive-hidratacion-facial.webp"
 draft: false
 ---
 
-**-Por Dra. Myriam Colodro E. – Cirujano Dentista, Especialista en Medicina Estética y Máster en Armonización Facial**
-Skinvive: el nuevo avance en hidratación facial con ácido hialurónico
-
 ## ¿Buscas una piel más hidratada, luminosa y saludable?
 
 Querida paciente,
@@ -34,11 +31,11 @@ A diferencia de otros rellenos faciales, Skinvive utiliza un ácido hialurónico
 
 Los beneficios que más valoran nuestras pacientes:
 
-- ✨ **Hidratación profunda** de larga duración.
-- ✨ **Mejora de textura**: piel más suave al tacto.
-- ✨ **Aumento de luminosidad** natural.
-- ✨ **Efecto glow** sin necesidad de maquillaje.
-- ✨ **Sin cambio de volumen** ni alteraciones en tus rasgos.
+- **Hidratación profunda** de larga duración.
+- **Mejora de textura**: piel más suave al tacto.
+- **Aumento de luminosidad** natural.
+- **Efecto glow** sin necesidad de maquillaje.
+- **Sin cambio de volumen** ni alteraciones en tus rasgos.
 
 Además, **estimula la producción de colágeno**, ayudando a prevenir el envejecimiento cutáneo de forma progresiva.
 
@@ -58,7 +55,7 @@ Es compatible con todos los fototipos y puede realizarse en cualquier época del
 
 El tratamiento se realiza en consulta médica y dura alrededor de **35 minutos**.
 
-### Paso a paso del procedimiento:
+### Paso a paso del procedimiento
 
 - Se limpia y desinfecta la piel.
 - Se aplica anestesia tópica para mayor comodidad.

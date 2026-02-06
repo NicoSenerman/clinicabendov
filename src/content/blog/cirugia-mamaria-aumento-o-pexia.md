@@ -13,11 +13,6 @@ thumbnailImage: "/images/blog/cirugia-mamaria-aumento-o-pexia.webp"
 draft: false
 ---
 
-****
-
-**Por Dr. Eduardo Costa E. – Cirujano Plástico Estético, **Más de 25 años de experiencia en Cirugía General y Estética
-****Aumento, reducción o pexia mamaria: ¿cómo saber qué cirugía mamaria necesitas realmente?
-
 Muchas pacientes llegan a mi consulta diciendo:
 
 *“Doctor, quiero operarme el busto, pero no sé exactamente qué necesito”*.
@@ -40,7 +35,7 @@ En realidad, cada procedimiento responde a un problema distinto:
 - Cambios tras embarazos o baja de peso
 - Dolor físico o incomodidad funcional
 
-👉 Por eso, **la evaluación médica es clave**. No se trata solo de estética, sino de proporción, salud y bienestar.
+Por eso, **la evaluación médica es clave**. No se trata solo de estética, sino de proporción, salud y bienestar.
 
 .
 
@@ -55,7 +50,7 @@ El **aumento mamario** está indicado principalmente cuando existe:
 
 Aquí utilizamos implantes mamarios, pero no todas las pacientes necesitan el mismo tamaño ni el mismo tipo.
 
-📌 Algo muy importante:
+Algo muy importante:
 
 Muchas mujeres creen que solo necesitan implantes, cuando en realidad **también presentan caída**, lo que puede requerir una cirugía distinta o combinada.
 
@@ -74,11 +69,11 @@ Esto es muy frecuente después de:
 - Baja de peso
 - Paso del tiempo
 
-👉 En estos casos, **no siempre es necesario aumentar volumen**.
+En estos casos, **no siempre es necesario aumentar volumen**.
 
 A veces solo reposicionar y dar forma logra un resultado natural y armónico.
 
-📌 En otros casos, se puede **combinar pexia + implantes**, dependiendo de cada paciente.
+En otros casos, se puede **combinar pexia + implantes**, dependiendo de cada paciente.
 
 ## Reducción mamaria: cuando el busto genera molestias físicas
 
@@ -94,7 +89,7 @@ Muchas pacientes consultan por:
 
 En estos casos, reducir volumen **mejora la calidad de vida**, además del resultado estético.
 
-👉 Aquí el objetivo es lograr un busto:
+Aquí el objetivo es lograr un busto:
 
 - Más liviano
 - Más armónico
@@ -135,6 +130,6 @@ Cada paciente es única, y la cirugía debe adaptarse a ti, no al revés.
 
 Si estás considerando una cirugía mamaria y quieres una orientación clara, profesional y honesta, puedes agendar una **evaluación médica personalizada** en **Clínica Bendov Estética**.
 
-📍 Evaluamos tu caso, resolvemos tus dudas y definimos la mejor opción para ti.
+Evaluamos tu caso, resolvemos tus dudas y definimos la mejor opción para ti.
 
-👉 **Agenda tu evaluación y conversemos con tranquilidad sobre tus objetivos.**
+**Agenda tu evaluación y conversemos con tranquilidad sobre tus objetivos.**

@@ -28,17 +28,17 @@ Es una excelente opción para quienes no logran mejorar esta zona con dieta ni e
 - Puede eliminar estrías **solo si están en la piel que se retira durante la cirugía**. Las demás pueden cambiar de ubicación o estirarse.
 - Reposiciona el ombligo en su lugar correcto, logrando una apariencia natural.
 
-💡 **Importante:** No es una cirugía para bajar de peso, sino para mejorar el contorno y firmeza abdominal una vez que ya estás cerca de tu peso ideal.
+**Importante:** No es una cirugía para bajar de peso, sino para mejorar el contorno y firmeza abdominal una vez que ya estás cerca de tu peso ideal.
 
 ### ¿Es para ti?
 
 La abdominoplastia está indicada si:
 
-✅ Tienes exceso de piel o flacidez abdominal que no mejora con ejercicio.
-✅ Sientes que tu abdomen sobresale por debilidad muscular.
-✅ Has tenido uno o más embarazos y tu abdomen no volvió a su forma previa.
-✅ Bajaste mucho de peso y te quedó piel sobrante.
-✅ Estás en buen estado de salud y deseas un cambio visible y duradero.
+- Tienes exceso de piel o flacidez abdominal que no mejora con ejercicio.
+- Sientes que tu abdomen sobresale por debilidad muscular.
+- Has tenido uno o más embarazos y tu abdomen no volvió a su forma previa.
+- Bajaste mucho de peso y te quedó piel sobrante.
+- Estás en buen estado de salud y deseas un cambio visible y duradero.
 
 ### ¿Cómo es la cirugía?
 
@@ -72,8 +72,6 @@ Desde la primera consulta hasta los controles postoperatorios, te acompañamos c
 La cicatriz queda ubicada en la parte baja del abdomen, a nivel del bikini. Con buenos cuidados y los tratamientos postoperatorios que ofrecemos, puede atenuarse considerablemente con el tiempo y ser fácilmente disimulable.
 
 ### ¿Quieres saber si es el momento para tu cambio?
-
-Te invitamos a agendar una [**evaluación médica gratuita **](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)con el [Dr Eduardo Costa Edwards](https://clinicabendov.cl/clinica-estetica-bendov/)
 
 En ella analizaremos tu caso en profundidad y te entregaremos una propuesta honesta, clara y adaptada a tu cuerpo.
 

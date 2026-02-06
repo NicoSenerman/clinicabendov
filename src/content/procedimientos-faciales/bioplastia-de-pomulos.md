@@ -49,5 +49,3 @@ Solicita una cita gratuita con nuestros especialistas para obtener un diagnósti
 - Los resultados son visibles de forma inmediata.
 
 **¡No esperes más y realza tu belleza con la bioplastia de pómulos!**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

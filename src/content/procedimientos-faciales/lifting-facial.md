@@ -12,7 +12,7 @@ order: 0
 draft: false
 ---
 
-# Lifting Facial: Rejuvenece tu rostro, recupera tu expresión
+## Lifting Facial: Rejuvenece tu rostro, recupera tu expresión
 Corrige la flacidez, redefine el contorno facial y luce renovada sin perder tu esencia.
 
 Con el paso del tiempo, el rostro comienza a reflejar signos de envejecimiento que no siempre coinciden con cómo nos sentimos por dentro. El **lifting facial** es una **cirugía estética avanzada** que permite **rejuvenecer y tensar los tejidos del rostro y cuello**, logrando un resultado **natural, duradero y armónico**.
@@ -26,20 +26,20 @@ En [Clínica Bendov](https://clinicabendov.cl/clinica-estetica-bendov/) realizam
 - Restaura el contorno mandibular (“jawline”).
 - Resultado natural: pareces tú… solo más joven.
 
-💡 **Importante:** El lifting no cambia quién eres. Solo devuelve lo que el tiempo quiso quitarte.
+**Importante:** El lifting no cambia quién eres. Solo devuelve lo que el tiempo quiso quitarte.
 
 ## ¿Es para ti?
 El lifting facial puede ser una excelente opción si:
 
-✅ Notas flacidez en la cara o cuello que no mejora con tratamientos no invasivos.
+- Notas flacidez en la cara o cuello que no mejora con tratamientos no invasivos.
 
-✅ Tus mejillas han descendido y tu contorno facial se ve desdibujado.
+- Tus mejillas han descendido y tu contorno facial se ve desdibujado.
 
-✅ Tienes papada o piel suelta bajo el mentón.
+- Tienes papada o piel suelta bajo el mentón.
 
-✅ Quieres un cambio duradero y de apariencia natural.
+- Quieres un cambio duradero y de apariencia natural.
 
-✅ Estás en buen estado de salud y tienes expectativas realistas.
+- Estás en buen estado de salud y tienes expectativas realistas.
 
 ## ¿Cómo es la cirugía?
 El lifting facial se realiza en pabellón, bajo anestesia general o sedación, según el caso.
@@ -79,11 +79,8 @@ Te invitamos a agendar una **evaluación médica gratuita y sin compromiso**.
 
 Te orientaremos con honestidad, responderemos todas tus dudas y te entregaremos una propuesta personalizada según tu rostro y tus objetivos.
 
-👉 [**Haz clic aquí y agenda tu evaluación.**](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
 **Dr. Eduardo Costa Edwards**
 
 Recuperar tu juventud no es un lujo, es una decisión personal.
 
 **Y estamos aquí para ayudarte a dar ese paso con seguridad y confianza.**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

@@ -42,5 +42,3 @@ En Clínica Bendov realizamos este procedimiento con los más altos estándares 
 ## Agenda tu evaluación gratuita
 
 Te invitamos a agendar una evaluación sin costo con nuestro equipo médico. Podremos explicarte en detalle si la Minilipo Vaser es la mejor opción para ti, según tus objetivos, tu anatomía y tu estilo de vida.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

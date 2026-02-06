@@ -13,10 +13,6 @@ thumbnailImage: "/images/blog/armonizacion-facial-tratamiento-integral.webp"
 draft: false
 ---
 
--Por Dr. David Ben-Dov – Médico Cirujano, Especialista en Cirugía Estética
-
-Armonización Facial Full: Un Rostro Renovado Sin Perder Tu Esencia
-
 Hoy en día, verse bien ya no se trata de cambiar quién eres, sino de **potenciar lo mejor de ti**.
 
 La armonización facial es un enfoque médico-estético integral que busca exactamente eso: ayudarte a **lucir más fresco, descansado y armónico**, sin perder tu identidad.

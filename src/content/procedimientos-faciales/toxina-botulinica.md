@@ -19,9 +19,9 @@ La toxina botulínica —conocida por marcas como **Botox®, Dysport® o Nabota�
 Actúa bloqueando la liberación de acetilcolina, un neurotransmisor que provoca la contracción muscular. Así, al relajar el músculo, la piel se alisa.
 
 ### ¿Para qué se utiliza?
-- ✅ **Eliminar arrugas dinámicas**: aquellas que aparecen al gesticular —en la frente, el entrecejo o alrededor de los ojos (patas de gallo).
-- ✅ **Prevenir nuevas arrugas**: al relajar los músculos, se reduce la tensión sobre la piel y se evita su marcación con el tiempo.
-- ✅ **Uso médico**: también se utiliza para tratar afecciones como blefaroespasmo (parpadeo involuntario), estrabismo y distonía cervical.
+- **Eliminar arrugas dinámicas**: aquellas que aparecen al gesticular —en la frente, el entrecejo o alrededor de los ojos (patas de gallo).
+- **Prevenir nuevas arrugas**: al relajar los músculos, se reduce la tensión sobre la piel y se evita su marcación con el tiempo.
+- **Uso médico**: también se utiliza para tratar afecciones como blefaroespasmo (parpadeo involuntario), estrabismo y distonía cervical.
 
 ### ¿Cómo se aplica?
 Es un procedimiento ambulatorio, rápido y prácticamente indoloro. Se realizan microinyecciones en puntos estratégicos del rostro, sin necesidad de anestesia.
@@ -48,5 +48,3 @@ Pero lo más importante: que lo decidas con información clara y acompañamiento
 
 ### En Clínica Bendov te acompañamos
 Contamos con un equipo médico especializado en rejuvenecimiento facial. Cada tratamiento es **personalizado**, seguro y enfocado en lograr resultados **naturales**, respetando tus gestos y tu identidad.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

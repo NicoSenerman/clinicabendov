@@ -39,5 +39,3 @@ Sí. Es una técnica mínimamente invasiva realizada por nuestros cirujanos espe
 ## ¿Quieres saber si la liposucción Vaser es para ti?
 
 Te invitamos a agendar una **evaluación médica gratuita**. Nuestro equipo analizará tu caso en detalle y te entregará una propuesta personalizada y honesta.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

@@ -1,0 +1,131 @@
+# Bendov Clínica Estética
+
+> Clínica de medicina y cirugía estética en Las Condes, Santiago de Chile. Procedimientos faciales, corporales e íntimos con más de 25 años de experiencia.
+
+## Información General
+
+- Sitio web: https://clinicabendov.cl
+- Dirección: El Trovador #4280, Of. 410, Las Condes, Santiago, Chile
+- Teléfono: +56 2 2374 1430
+- WhatsApp: +56 9 3534 0819
+- Email: contacto@clinicabendov.cl
+- Horario: Lunes a Sábado, 09:00 - 17:00
+- Google Maps: https://maps.google.com/?q=El+Trovador+4280,+Las+Condes,+Santiago,+Chile
+
+## Equipo Médico
+
+### Dr. David Ben-Dov Codner — Director Médico
+- Médico Cirujano Ginecólogo, Universidad de Chile
+- Más de 25 años de experiencia en Minilipo y Liposucción
+- Especialista en Clínica y Cirugía Estética
+- Especialista en Procedimientos Estéticos Ginecológicos
+- Áreas: Liposucción, Labioplastia, Armonización del Rostro, Pellet de Testosterona
+
+### Dr. Eduardo Costa Edwards — Cirujano Plástico Estético
+- Médico Cirujano, Universidad de Chile
+- Fellowship en Cirugía Endocrina y Oncológica, University of Chicago
+- Miembro del American College of Surgeons y American Academy of Cosmetic Surgery
+- Áreas: Liposucción, Cirugía facial estética, Cirugía de mamas, Abdominoplastia
+
+### Dra. Myriam Colodro Ebner — Especialista en Armonización Facial
+- Cirujano Dentista, Universidad Mayor
+- Master en Armonización Facial, ENOVA, Brasil
+- Áreas: Armonización del rostro, Toxina botulínica, Rellenos, Bioestimulación, Hilos tensores
+
+### Dra. Mabel Suárez — Oftalmóloga Oculoplástica
+- Médico Cirujano Oftalmólogo Oculoplástico, Universidad de los Andes (revalidado U. de Chile)
+- Miembro Sociedad Chilena de Oftalmología y Oculoplástica
+- Áreas: Cirugías oculoplásticas, Blefaroplastia
+
+### Dr. Salomón Núñez — Especialista en Medicina Estética
+- Médico Cirujano, Pontificia Universidad Católica de Chile
+- Master en Medicina Estética y Anti-Aging, Academia Europea de Medicina Estética
+- Áreas: Liposucción, Cirugías corporales, Armonización facial
+
+### Dra. Paulina Garriga Maldonado — Especialista en Estética Orofacial
+- Cirujano Dentista, Universidad de Chile
+- Especialista en estética dental y orofacial
+- Áreas: Bichectomía, Armonización del rostro, Toxina botulínica, Hilos tensores
+
+## Procedimientos Corporales
+
+- Aumento Mamario: /procedimientos-corporales/aumento-mamario/
+- Abdominoplastia: /procedimientos-corporales/abdominoplastia/
+- Lifting de Brazos: /procedimientos-corporales/lifting-de-brazos/
+- Minilipo Vaser: /procedimientos-corporales/minilipo-vaser/
+- Hiperhidrosis: /procedimientos-corporales/hiperhidrosis/
+- CelluSculpt Pro: /procedimientos-corporales/cellusculpt-pro/
+- Lifechip Pellet de Testosterona: /procedimientos-corporales/lifechip-testosterona/
+- Lipo en Ginecomastia: /procedimientos-corporales/lipo-en-ginecomastia/
+- Lipo Transferencia: /procedimientos-corporales/lipo-transferencia/
+- Lipoescultura: /procedimientos-corporales/lipoescultura/
+- Liposucción Vaser: /procedimientos-corporales/liposuccion-vaser/
+- Carboxiterapia: /procedimientos-corporales/carboxiterapia/
+
+## Procedimientos Faciales
+
+- Lifting Facial: /procedimientos-faciales/lifting-facial/
+- Toxina Botulínica: /procedimientos-faciales/toxina-botulinica/
+- Perfilado Mandibular: /procedimientos-faciales/perfilado-mandibular/
+- Relleno de Párpados: /procedimientos-faciales/relleno-de-parpados/
+- Bioplastia de Mentón: /procedimientos-faciales/bioplastia-de-menton/
+- Bioplastia de Pómulos: /procedimientos-faciales/bioplastia-de-pomulos/
+- Bioestimuladores Faciales: /procedimientos-faciales/bioestimuladores/
+- Rinomodelación: /procedimientos-faciales/rinomodelacion/
+- Mesoterapia con Elástica Dorada y Plateada: /procedimientos-faciales/mesoterapia-con-elastica/
+- Láser Fraccionado de CO2: /procedimientos-faciales/laser-fraccionado-co2/
+- Hilos Tensores: /procedimientos-faciales/hilos-tensores/
+- Plasma Rico en Plaquetas: /procedimientos-faciales/plasma-rico-en-plaquetas/
+- Rellenos Faciales: /procedimientos-faciales/rellenos-faciales/
+- Lobuloplastia: /procedimientos-faciales/lobuloplastia/
+- Blefaroplastia o Cirugía de Párpados: /procedimientos-faciales/blefaroplastia/
+- Bioestimulador de Colágeno: /procedimientos-faciales/bioestimulador-de-colageno/
+- Bichectomía: /procedimientos-faciales/bichectomia/
+
+## Procedimientos Íntimos
+
+- Lifting Labios Mayores: /procedimientos-intimos/lifting-labios-mayores/
+- Mesoterapia Íntima: /procedimientos-intimos/mesoterapia-intima/
+- Plasma Rico en Plaquetas Íntimo: /procedimientos-intimos/plasma-rico-en-plaquetas-intimo/
+- Vaginoplastia: /procedimientos-intimos/vaginoplastia/
+- Labioplastia Láser: /procedimientos-intimos/labioplastia-laser/
+- Rejuvenecimiento Íntimo Láser CO2: /procedimientos-intimos/rejuvenecimiento-intimo-laser-co2/
+
+## Blog (Artículos Recientes)
+
+- Tratamiento Médico con Láser Fraccionado de CO2: /blog/laser-fraccionado-co2/
+- Armonización Facial Full: /blog/armonizacion-facial-tratamiento-integral/
+- Ginecomastia y Pseudoginecomastia: /blog/ginecomastia-y-pseudoginecomastia/
+- El Poder Oculto del ADN de Salmón: /blog/adn-de-salmon-rejuvenecimiento-facial/
+- Recupera la Firmeza Íntima con Láser CO2: /blog/rejuvenecimiento-vaginal-laser/
+- Lipo Vaser Papada: /blog/lipo-vaser-papada/
+- Liposucción Postparto Vaser: /blog/liposuccion-postparto-vaser/
+- Vaginoplastia — Señales, Beneficios y lo que Debes Saber: /blog/vaginoplastia/
+- Bioestimuladores de Colágeno: /blog/bioestimuladores-de-colageno/
+- Labioplastia Láser — Es el Procedimiento Adecuado para Ti: /blog/labioplastia-laser/
+- Bolsas en los Ojos y Párpados Caídos: /blog/bolsas-en-los-ojos-y-parpados-caidos/
+- Lipo Facial Estructurada: /blog/lipo-facial-estructurada-bichectomia/
+- Solución Médica para Hiperhidrosis: /blog/hiperhidrosis-axilar/
+- Cirugía Mamaria — Aumento, Reducción o Pexia: /blog/cirugia-mamaria-aumento-o-pexia/
+- Liposucción Vaser vs Tradicional: /blog/liposuccion-vaser-vs-tradicional/
+- Liposucción — Cuándo Considerar: /blog/liposuccion-cuando-es-efectiva/
+- Rejuvenecimiento Íntimo en la Menopausia: /blog/rejuvenecimiento-intimo-en-la-menopausia/
+- Pellet de Testosterona Lifechip: /blog/pellet-de-testosterona-lifechip/
+- Lipoabdominoplastia — Cuándo es Necesaria: /blog/lipoabdominoplastia-cuando-es-necesaria/
+- Toxina Botulínica Preventiva: /blog/toxina-botulinica-preventiva/
+- Skinvive — Hidratación Facial con Ácido Hialurónico: /blog/skinvive-hidratacion-facial/
+
+## Páginas Adicionales
+
+- Sobre Nosotros: /sobre-nosotros/
+- Contacto: /contacto/
+- Experiencias de Pacientes: /experiencias/
+- Resultados: /resultados/
+- Agenda tu Evaluación: /agenda-tu-evaluacion/
+- Autorizaciones y Certificados: /autorizaciones/
+- Términos y Condiciones: /terminos-y-condiciones/
+
+## Redes Sociales
+
+- Facebook: https://www.facebook.com/bendovclinicaestetica/
+- Instagram: https://www.instagram.com/clinicabendov/

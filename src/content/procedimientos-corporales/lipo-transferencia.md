@@ -21,7 +21,7 @@ La Lipo Transferencia es un procedimiento innovador que combina dos técnicas:
 - **Lipoescultura:** Eliminación de la grasa localizada de zonas específicas del cuerpo.
 - **Transferencia de grasa:** Inyección de la grasa extraída en otras áreas del cuerpo para darles volumen o mejorar su contorno.
 
-## Beneficios:
+## Beneficios
 
 - **Remodela el contorno corporal de forma integral.**
 - **Aumenta el volumen de zonas como glúteos o mamas.**
@@ -43,5 +43,3 @@ La Lipo Transferencia se realiza bajo anestesia local o sedación consciente sup
 **Resultados:**
 
 Los resultados de la Lipo Transferencia son visibles de forma inmediata y se van perfeccionando con el tiempo. La mayoría de los pacientes pueden volver a sus actividades normales en pocos días
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

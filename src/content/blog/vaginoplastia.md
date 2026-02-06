@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/vaginoplastia.webp"
 draft: false
 ---
 
-**Por Dr. David Ben-Dov – Médico Cirujano Ginecólogo, Universidad de Chile**
-¿Es para mí la Vaginoplastia? Señales, beneficios y lo que toda mujer debería saber antes de decidirse
-
 Hola, soy el Dr. David Ben-Dov, cirujano especializado en medicina estética. Si estás leyendo esto, probablemente has sentido que algo ha cambiado en tu zona íntima—física, estética o emocionalmente—y te estás preguntando si la vaginoplastia puede ayudarte. Mi intención con este artículo es hablarte con honestidad, desde mi experiencia médica y con profundo respeto por lo que estás sintiendo.
 
 ## ¿Cuándo considerar una vaginoplastia?

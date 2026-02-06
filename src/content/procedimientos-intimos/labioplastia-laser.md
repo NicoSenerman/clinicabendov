@@ -53,8 +53,6 @@ En Clínica Bendov te acompañamos con total privacidad y profesionalismo.
 
 Reserva una **consulta médica sin costo**, donde podrás aclarar todas tus dudas y conocer si esta técnica es adecuada para ti.
 
-### 💙 Bienestar íntimo también es salud.
+### Bienestar íntimo también es salud.
 
 **Clínica Bendov. Rejuvenecimiento íntimo con tecnología láser y respaldo médico.**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

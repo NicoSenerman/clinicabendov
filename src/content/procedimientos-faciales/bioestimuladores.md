@@ -48,5 +48,3 @@ Los bioestimuladores faciales son productos seguros y biocompatibles, con un baj
 
 ## ¿Quieres lucir una piel más joven y radiante?
 Solicita una cita gratuita con nuestros especialistas para obtener un diagnóstico personalizado y recomendarte el tratamiento más adecuado para tus necesidades
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

@@ -28,17 +28,17 @@ Ya sea que siempre hayas querido más volumen, que tus pechos hayan perdido firm
 - Cicatrices mínimas y cuidadosamente ubicadas.
 - Recuperación rápida y acompañamiento cercano.
 
-💡 **Tip importante:** Un buen resultado no se mide por el tamaño… sino por lo armónico y natural que se ve en tu cuerpo.
+**Tip importante:** Un buen resultado no se mide por el tamaño… sino por lo armónico y natural que se ve en tu cuerpo.
 
 ### ¿Está indicada para ti?
 
 El aumento mamario es una excelente opción si:
 
-✅ Sientes que tu busto es pequeño o no está en proporción con tu cuerpo.
-✅ Has perdido volumen o firmeza tras embarazos, lactancia o pérdida de peso.
-✅ Tienes asimetría mamaria.
-✅ Deseas mejorar tu imagen corporal y confianza personal.
-✅ Estás en buen estado de salud y tienes expectativas realistas.
+- Sientes que tu busto es pequeño o no está en proporción con tu cuerpo.
+- Has perdido volumen o firmeza tras embarazos, lactancia o pérdida de peso.
+- Tienes asimetría mamaria.
+- Deseas mejorar tu imagen corporal y confianza personal.
+- Estás en buen estado de salud y tienes expectativas realistas.
 
 ### ¿Cómo es el procedimiento?
 
@@ -75,8 +75,6 @@ Además, te entregamos todas las indicaciones y tratamientos postoperatorios par
 Te invitamos a agendar una **evaluación médica gratuita y sin compromiso**.
 
 Nuestro equipo te guiará, responderá todas tus preguntas y te dará una propuesta honesta, profesional y personalizada.
-
-👉 **[Haz clic aquí y agenda tu evaluación gratuita](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones).**
 
 Tu seguridad, tu cuerpo, tu decisión.
 

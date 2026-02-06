@@ -28,17 +28,17 @@ El **lifting de brazos** o **braquioplastia** es una cirugía que permite **elim
 - Permite mayor comodidad para vestir sin preocuparte por esconder tus brazos.
 - Resultados visibles y duraderos.
 
-💡 **Dato importante:** Es una cirugía especialmente indicada para personas que han bajado mucho de peso o tienen piel muy laxa por envejecimiento.
+**Dato importante:** Es una cirugía especialmente indicada para personas que han bajado mucho de peso o tienen piel muy laxa por envejecimiento.
 
 ### ¿Es para ti?
 
 El lifting de brazos está indicado si:
 
-✅ Tienes flacidez notoria en la cara interna del brazo.
-✅ Sientes que tus brazos no representan tu esfuerzo corporal (por ejemplo, tras adelgazar).
-✅ Te molesta el exceso de piel al mover los brazos.
-✅ Evitas ropa sin mangas por incomodidad o vergüenza.
-✅ Estás en buen estado de salud y deseas una solución definitiva.
+- Tienes flacidez notoria en la cara interna del brazo.
+- Sientes que tus brazos no representan tu esfuerzo corporal (por ejemplo, tras adelgazar).
+- Te molesta el exceso de piel al mover los brazos.
+- Evitas ropa sin mangas por incomodidad o vergüenza.
+- Estás en buen estado de salud y deseas una solución definitiva.
 
 ### ¿Cómo es la cirugía?
 
@@ -71,8 +71,6 @@ En Clínica Bendov la realizamos en pabellones certificados, con un seguimiento 
 Agenda una **evaluación médica gratuita y sin compromiso**.
 
 Nuestro [equipo](https://clinicabendov.cl/clinica-estetica-bendov/) analizará tu caso, te explicará con claridad las opciones y te entregará una propuesta personalizada.
-
-[👉 **Haz clic aquí y agenda tu evaluación gratuita.**](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
 
 No se trata solo de brazos más firmes.
 

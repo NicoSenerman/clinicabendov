@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/liposuccion-cuando-es-efectiva.webp"
 draft: false
 ---
 
-**Por Dr. David Ben-Dov – ****Médico Cirujano, Especialista en Cirugía Estética**
-**¿Lipo o dieta y ejercicio? Cuándo considerar la liposucción como una solución efectiva**
-
 Una de las preguntas más frecuentes que recibo en consulta es:
 
 *“Doctor, ¿no sería mejor que bajara de peso con dieta y ejercicio antes de hacerme una lipo?”*
@@ -38,15 +35,15 @@ La [liposucción](https://clinicabendov.cl/procedimientos-corporales/minilipo-va
 
 Algunos ejemplos comunes:
 
-•Abdomen inferior o bajo ombligo
+- Abdomen inferior o bajo ombligo
 
-•Caderas y flancos (“rollitos”)
+- Caderas y flancos (“rollitos”)
 
-•Papada
+- Papada
 
-•Muslos internos
+- Muslos internos
 
-•Espalda baja
+- Espalda baja
 
 Esta grasa no siempre representa un problema de salud, pero sí puede afectar tu autoestima o limitarte a la hora de usar la ropa que te gusta.
 
@@ -54,13 +51,13 @@ Esta grasa no siempre representa un problema de salud, pero sí puede afectar tu
 
 Aquí te dejo algunas señales claras de que podrías beneficiarte de una lipo:
 
-•Tienes un peso estable o cercano a tu peso ideal, pero **con grasa localizada** que no cede.
+- Tienes un peso estable o cercano a tu peso ideal, pero **con grasa localizada** que no cede.
 
-•Has intentado con dieta, ejercicio e incluso tratamientos no invasivos, **sin lograr cambios visibles en ciertas zonas**.
+- Has intentado con dieta, ejercicio e incluso tratamientos no invasivos, **sin lograr cambios visibles en ciertas zonas**.
 
-•Quieres mejorar la forma de tu cuerpo, más allá del número en la balanza.
+- Quieres mejorar la forma de tu cuerpo, más allá del número en la balanza.
 
-•Estás motivado(a) a mantener los resultados con buenos hábitos a largo plazo.
+- Estás motivado(a) a mantener los resultados con buenos hábitos a largo plazo.
 
 ### ¿Y si tengo sobrepeso?
 

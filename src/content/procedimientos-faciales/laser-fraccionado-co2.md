@@ -17,7 +17,7 @@ draft: false
 ## ¿Qué es el Láser Fraccionado de CO2?
 Es un tratamiento de última generación que utiliza un láser de dióxido de carbono para eliminar las capas superficiales de la piel y estimular la producción de colágeno y elastina.
 
-## Beneficios:
+## Beneficios
 - **Reduce las arrugas y líneas de expresión.**
 - **Elimina las manchas de la edad y el sol.**
 - **Mejora la textura y el tono de la piel.**
@@ -34,10 +34,8 @@ Está indicado para personas que:
 - Tienen cicatrices de acné u otras imperfecciones.
 - Buscan un tratamiento eficaz para el rejuvenecimiento facial.
 
-## Procedimiento:
+## Procedimiento
 El Láser Fraccionado de CO2 se realiza en sesiones ambulatorias de aproximadamente 30 minutos. Se aplica una crema anestésica tópica para minimizar las molestias. El tratamiento se puede realizar en rostro, cuello, escote y manos.
 
-## Resultados:
+## Resultados
 Los resultados del Láser Fraccionado de CO2 son visibles desde las primeras semanas. La piel se ve más joven, tersa y luminosa.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

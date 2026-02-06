@@ -62,5 +62,3 @@ El tratamiento con bioestimulador de colágeno cuenta con un alto perfil de segu
 
 ### Evaluación médica
 En Clínica Bendov, realizamos una evaluación médica previa sin costo para determinar si el tratamiento es adecuado para cada paciente, personalizando la técnica y el tipo de producto según los objetivos y necesidades individuales.
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

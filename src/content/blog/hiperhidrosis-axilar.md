@@ -13,9 +13,7 @@ thumbnailImage: "/images/blog/hiperhidrosis-axilar.webp"
 draft: false
 ---
 
-******Por Dr. David Ben-Dov – ****Médico Cirujano, Especialista en Cirugía Estética**
-**Más Seguridad, Menos Sudor: Solución Médica para Hiperhidrosis Axilar o Palmar**
-- Hola, soy el Dr. **David Ben-Dov**, y quiero hablarte directamente sobre algo que quizás has vivido en silencio: **el sudor excesivo**.
+Hola, soy el Dr. **David Ben-Dov**, y quiero hablarte directamente sobre algo que quizás has vivido en silencio: **el sudor excesivo**.
 
 Sé lo incómodo que puede ser. He visto cómo muchas personas se sienten limitadas por esta condición. **Evitan levantar los brazos, dar la mano o usar cierta ropa por miedo a que se note la transpiración**. Si te ha pasado, quiero que sepas algo importante: **esto tiene solución, es segura y funciona rápidamente**.
 
@@ -29,10 +27,10 @@ Utilizamos **toxina botulínica tipo A**, más conocida como Botox. Esta actúa 
 
 El procedimiento es **rápido, seguro y sin dolor significativo**. En menos de 30 minutos, aplicamos microinyecciones en la zona afectada y puedes retomar tu rutina ese mismo día.
 
-✔️ Ambulatorio
-✔️ Sin cirugía
-✔️ Resultados en pocos días
-✔️ Efecto prolongado de 6 a 9 meses
+Ambulatorio
+Sin cirugía
+Resultados en pocos días
+Efecto prolongado de 6 a 9 meses
 
 **¿El procedimiento duele?**
 
@@ -83,7 +81,7 @@ Yo estoy aquí para acompañarte en ese proceso. He visto cómo esta simple inte
 
 Te invito a que conversemos. Vamos a revisar tu caso, resolver tus dudas y definir juntos si este tratamiento es adecuado para ti.
 
-📅 [Reserva tu evaluación gratuita aquí](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
+� [Reserva tu evaluación gratuita aquí](https://agendamiento.reservo.cl/mireservo/agenda-evaluaciones)
 
 **Más seguridad, menos sudor. Estás a una decisión de distancia de vivir más libre.**
 

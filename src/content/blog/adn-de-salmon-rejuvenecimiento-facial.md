@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/adn-de-salmon-rejuvenecimiento-facial.webp"
 draft: false
 ---
 
-**-Por Dra. Myriam Colodro E. – Cirujano Dentista, Especialista en Medicina Estética y Máster en Armonización Facial**
-**El poder oculto del ADN de salmón: el secreto de la ciencia mejor guardado para rejuvenecer tu piel**
-
 ## Descubre por qué los polinucleótidos son el procedimiento estético más demandado hoy en día
 
 No es magia, y definitivamente no es una moda pasajera.

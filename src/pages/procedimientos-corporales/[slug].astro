@@ -19,9 +19,10 @@ const { Content } = await render(procedure);
   description={procedure.data.description}
   seoTitle={procedure.data.seoTitle}
   seoDescription={procedure.data.seoDescription}
+  seoKeywords={procedure.data.seoKeywords}
   heroImage={procedure.data.heroImage}
   category="corporales"
-  relatedPost={procedure.data.relatedPost}
+  slug={procedure.data.slug}
 >
   <Content />
 </ProcedureLayout>

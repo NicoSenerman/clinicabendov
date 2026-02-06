@@ -14,7 +14,7 @@ draft: false
 
 ## Lipoescultura - Clínica Bendov
 
-## Descripción:
+## Descripción
 
 **Lipoescultura: Remodela tu cuerpo y elimina la grasa localizada de forma segura y eficaz.** En Clínica Bendov, contamos con un equipo d altamente calificados y experimentados en la técnica de la lipoescultura.
 
@@ -42,5 +42,3 @@ La lipoescultura se realiza bajo anestesia local o sedación consciente superfic
 **Resultados:**
 
 Los resultados de la lipoescultura son visibles de forma inmediata y se van perfeccionando con el tiempo. La mayoría de los pacientes pueden volver a sus actividades normales en pocos días
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import SEOHead from '../components/SEOHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -14,6 +15,7 @@ interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  keywords?: string;
 }
 
 const props = Astro.props;
@@ -24,8 +26,12 @@ const props = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Preload logo -->
+    <link rel="preload" href="/images/site/logo-bendov.png" as="image" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,8 +42,9 @@ const props = Astro.props;
     />
 
     <SEOHead {...props} />
+    <ViewTransitions />
 
-    <!-- Structured Data: HealthAndBeautyBusiness -->
+    <!-- Structured Data: HealthAndBeautyBusiness + MedicalClinic -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@graph": [
@@ -45,19 +52,62 @@ const props = Astro.props;
           "@type": ["HealthAndBeautyBusiness", "MedicalClinic"],
           "@id": `${siteConfig.url}/#organization`,
           "name": siteConfig.name,
+          "alternateName": "Clinica Bendov",
           "url": siteConfig.url,
+          "logo": `${siteConfig.url}/images/site/logo-bendov.png`,
+          "image": `${siteConfig.url}/images/site/equipo-bendov.webp`,
           "telephone": siteConfig.contact.phone,
+          "email": siteConfig.contact.email,
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "El Trovador #4280, Of. 410",
             "addressLocality": "Las Condes",
-            "addressRegion": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "postalCode": "7550075",
             "addressCountry": "CL",
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4145,
+            "longitude": -70.5956,
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Santiago",
+          },
+          "priceRange": "$$$",
+          "currenciesAccepted": "CLP",
+          "paymentAccepted": "Cash, Credit Card, Debit Card",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "159",
+            "bestRating": "5",
           },
           "sameAs": [
             siteConfig.social.facebook,
             siteConfig.social.instagram,
           ],
-          "openingHours": ["Mo-Sa 09:00-17:00"],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "17:00",
+            },
+          ],
+          "medicalSpecialty": [
+            "PlasticSurgery",
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Procedimientos Estéticos",
+            "itemListElement": [
+              { "@type": "OfferCatalog", "name": "Procedimientos Corporales" },
+              { "@type": "OfferCatalog", "name": "Procedimientos Faciales" },
+              { "@type": "OfferCatalog", "name": "Procedimientos Íntimos" },
+            ],
+          },
         },
         {
           "@type": "WebSite",
@@ -66,6 +116,11 @@ const props = Astro.props;
           "name": siteConfig.name,
           "publisher": { "@id": `${siteConfig.url}/#organization` },
           "inLanguage": "es",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${siteConfig.url}/?s={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
         },
       ],
     })} />
@@ -90,13 +145,13 @@ const props = Astro.props;
       ></iframe>
     </noscript>
 
-    <Header />
+    <Header transition:persist />
 
     <main class="flex-1">
       <slot />
     </main>
 
-    <Footer />
-    <WhatsAppButton />
+    <Footer transition:persist />
+    <WhatsAppButton transition:persist />
   </body>
 </html>

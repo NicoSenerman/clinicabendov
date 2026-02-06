@@ -41,5 +41,3 @@ Es un procedimiento seguro y eficaz que ha sido aprobado por las autoridades san
 Si estás buscando un tratamiento para rellenar las líneas de expresión, arrugas y surcos faciales, aumentar el volumen de los labios o mejorar la definición del contorno facial, el relleno dérmico con ácido hialurónico puede ser una buena opción para ti. Sin embargo, es importante que consultes con un médico especialista para que te asesore sobre si este tratamiento es adecuado para ti.
 
 **En nuestra clínica, contamos con un equipo de médicos expertos en la aplicación de rellenos dérmicos con ácido hialurónico. Te ofrecemos un tratamiento personalizado y seguro, con resultados naturales y duraderos**
-
-También puedes agendar tu hora por [Whatsapp](https://wa.me/56935340819), te esperamos!

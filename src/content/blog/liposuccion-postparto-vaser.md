@@ -13,9 +13,6 @@ thumbnailImage: "/images/blog/liposuccion-postparto-vaser.webp"
 draft: false
 ---
 
-*Por Dr. David Ben-Dov, Cirujano especialista en Liposucción*
-**Liposucción Postparto Vaser: Recupera Tu Figura Tras el Embarazo de Forma Segura y Efectiva**
-
 Si estás leyendo esto, probablemente haya una parte de ti que anhela volver a sentirse cómoda en su cuerpo. Tal vez te mires al espejo y ya no reconozcas del todo a la mujer que eras antes del embarazo. Sé lo que estás sintiendo. Esa incomodidad silenciosa al probarte ropa que antes te encantaba, esa frustración cuando el ejercicio y la alimentación no logran cambiar esas zonas que se han vuelto rebeldes. No es vanidad, es deseo de bienestar. Y quiero que sepas algo muy importante: no estás sola.
 
 Hoy quiero hablarte desde la experiencia clínica, con empatía, pero también con base médica. Quiero explicarte cómo una herramienta como la liposucción Vaser puede ayudarte a reencontrarte con tu figura de una manera segura, mínimamente invasiva y científicamente respaldada.

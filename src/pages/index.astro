@@ -24,28 +24,6 @@ const procedureCategories = [
   },
 ];
 
-const highlights = [
-  {
-    icon: 'shield',
-    title: 'Equipo Médico Certificado',
-    description: 'Profesionales especializados con amplia experiencia en medicina estética.',
-  },
-  {
-    icon: 'star',
-    title: 'Tecnología de Vanguardia',
-    description: 'Equipos de última generación para resultados superiores y seguros.',
-  },
-  {
-    icon: 'heart',
-    title: 'Atención Personalizada',
-    description: 'Te acompañamos de principio a fin en todo tu proceso.',
-  },
-  {
-    icon: 'check',
-    title: 'Evaluación Gratuita',
-    description: 'Agenda una cita sin costo y sin compromiso con nuestros especialistas.',
-  },
-];
 ---
 
 <BaseLayout
@@ -96,40 +74,6 @@ const highlights = [
           </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Highlights -->
-  <section class="relative -mt-12 z-10 mx-auto max-w-6xl px-6">
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {highlights.map((item) => (
-        <div class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-neutral-100">
-          <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary-100 text-primary-700">
-            {item.icon === 'shield' && (
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-              </svg>
-            )}
-            {item.icon === 'star' && (
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-              </svg>
-            )}
-            {item.icon === 'heart' && (
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-              </svg>
-            )}
-            {item.icon === 'check' && (
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            )}
-          </div>
-          <h3 class="text-sm font-semibold text-neutral-900">{item.title}</h3>
-          <p class="mt-1 text-sm leading-relaxed text-neutral-500">{item.description}</p>
-        </div>
-      ))}
     </div>
   </section>
 
@@ -194,6 +138,41 @@ const highlights = [
             decoding="async"
           />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews -->
+  <section class="py-20 md:py-28">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.15em] text-primary-600">Experiencias Reales</p>
+        <h2 class="mt-2 font-display text-3xl font-bold text-neutral-950 md:text-4xl">
+          Lo que dicen nuestros pacientes
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-neutral-500">
+          Reseñas verificadas de Google Maps de pacientes que confiaron en nosotros.
+        </p>
+      </div>
+
+      <div class="mt-12 trustindex-reviews">
+        <!-- Trustindex Google Reviews Widget (standalone, no WP dependency) -->
+        <script defer async src='https://cdn.trustindex.io/loader.js?447453a641b0175781561eb8dda'></script>
+      </div>
+
+      <!-- Fallback: link to Google Maps reviews -->
+      <div class="mt-8 text-center">
+        <a
+          href="https://www.google.com/maps/place/Bendov+Cl%C3%ADnica+Est%C3%A9tica/@-33.4145,-70.5956,17z/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 transition-colors hover:text-primary-800"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          Ver todas las reseñas en Google Maps
+        </a>
       </div>
     </div>
   </section>
