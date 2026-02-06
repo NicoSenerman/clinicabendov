@@ -108,7 +108,6 @@ export const footerNavigation = {
   ],
   clinica: [
     { label: 'Sobre Nosotros', href: '/sobre-nosotros/' },
-    { label: 'Resultados', href: '/resultados/' },
     { label: 'Experiencias', href: '/experiencias/' },
     { label: 'Blog', href: '/blog/' },
   ],

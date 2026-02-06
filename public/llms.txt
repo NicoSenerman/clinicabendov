@@ -120,7 +120,7 @@
 - Sobre Nosotros: /sobre-nosotros/
 - Contacto: /contacto/
 - Experiencias de Pacientes: /experiencias/
-- Resultados: /resultados/
+
 - Agenda tu Evaluación: /agenda-tu-evaluacion/
 - Autorizaciones y Certificados: /autorizaciones/
 - Términos y Condiciones: /terminos-y-condiciones/
