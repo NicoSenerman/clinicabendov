@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
+  --font-sans: 'Montserrat', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif';
   --font-display: 'Playfair Display', 'Georgia', 'serif';
 
   /* Primary: blue-teal from logo (#2C586C) at hue ~199 */
@@ -235,11 +235,11 @@ h1, h2, h3, h4, h5, h6 {
    ============================================ */
 
 .trustindex-reviews .ti-widget {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .trustindex-reviews .ti-widget .ti-widget-container *  {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Review card backgrounds — match our neutral palette */
@@ -301,6 +301,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .trustindex-reviews .ti-widget .ti-controls-line .dot {
   background: var(--color-primary-600) !important;
+}
+
+/* Hide "Write a review" button from Trustindex widget */
+.trustindex-reviews .ti-widget .ti-write-btn,
+.trustindex-reviews .ti-widget .ti-footer .ti-write-review-btn,
+.trustindex-reviews .ti-widget a[href*="review"],
+.trustindex-reviews .ti-widget .source-Google .ti-write-btn {
+  display: none !important;
 }
 
 /* Smooth animations */

@@ -15,6 +15,7 @@ export const siteConfig = {
     email: 'contacto@clinicabendov.cl',
     address: 'El Trovador #4280, Of. 410, Las Condes, Santiago',
     mapsUrl: 'https://maps.google.com/?q=El+Trovador+4280,+Las+Condes,+Santiago,+Chile',
+    schedulingUrl: 'https://agendamiento.reservo.cl/makereserva/plus/agenda/agenda-evaluaciones/',
   },
 
   social: {
@@ -28,5 +29,5 @@ export const siteConfig = {
     gtId: 'GT-M34BB75Z',
   },
 
-  openingHours: 'Lunes a Sábado, 09:00 - 17:00',
+  openingHours: 'Lunes a Viernes, 09:00 - 19:00',
 } as const;

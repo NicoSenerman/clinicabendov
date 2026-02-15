@@ -16,11 +16,11 @@ const doctors = [
       'Director Médico Bendov Clínica Estética',
     ],
     specialties: [
-      'Liposucción',
-      'Labioplastia y procedimientos estéticos ginecológicos',
-      'Armonización del Rostro',
-      'Procedimientos estéticos integrales',
-      'Bienestar hormonal, Pellet de Testosterona',
+      { label: 'Liposucción', href: '/procedimientos-corporales/liposuccion-vaser/' },
+      { label: 'Labioplastia y procedimientos ginecológicos', href: '/procedimientos-intimos/' },
+      { label: 'Armonización del Rostro', href: '/procedimientos-faciales/' },
+      { label: 'Procedimientos estéticos integrales', href: '/procedimientos-corporales/' },
+      { label: 'Bienestar Hormonal — Pellet de Testosterona', href: '/procedimientos-corporales/lifechip-testosterona/' },
     ],
   },
   {
@@ -37,11 +37,11 @@ const doctors = [
       'Docente universitario en distintas facultades de medicina',
     ],
     specialties: [
-      'Liposucción y contorno corporal',
-      'Cirugía facial estética (lifting, párpados, etc.)',
-      'Cirugía de mamas (aumento, reducción, pexia)',
-      'Abdominoplastia y cirugía postbariátrica',
-      'Reconstrucción estética integral',
+      { label: 'Liposucción y contorno corporal', href: '/procedimientos-corporales/liposuccion-vaser/' },
+      { label: 'Cirugía facial estética', href: '/procedimientos-faciales/lifting-facial/' },
+      { label: 'Cirugía de mamas', href: '/procedimientos-corporales/aumento-mamario/' },
+      { label: 'Abdominoplastia', href: '/procedimientos-corporales/abdominoplastia/' },
+      { label: 'Reconstrucción estética integral', href: '/procedimientos-corporales/' },
     ],
   },
   {
@@ -54,9 +54,9 @@ const doctors = [
       'Certificación Hilos Tensores APTOS, APTOS Training, Chile, 2022',
     ],
     specialties: [
-      'Armonización del rostro',
-      'Técnicas avanzadas con toxina botulínica, rellenos, bioestimulación e hilos tensores',
-      'Evaluación estética y funcional tercio inferior',
+      { label: 'Armonización del rostro', href: '/procedimientos-faciales/' },
+      { label: 'Toxina botulínica y rellenos', href: '/procedimientos-faciales/toxina-botulinica/' },
+      { label: 'Bioestimulación e hilos tensores', href: '/procedimientos-faciales/hilos-tensores/' },
     ],
   },
   {
@@ -72,8 +72,8 @@ const doctors = [
       'Miembro Sociedad Chilena de Oculoplástica',
     ],
     specialties: [
-      'Cirugías oculoplásticas',
-      'Blefaroplastia',
+      { label: 'Cirugías oculoplásticas', href: '/procedimientos-faciales/blefaroplastia/' },
+      { label: 'Blefaroplastia', href: '/procedimientos-faciales/blefaroplastia/' },
     ],
   },
   {
@@ -91,25 +91,9 @@ const doctors = [
       'Miembro Asociación Colombiana de Medicina y Cirugía Estética',
     ],
     specialties: [
-      'Liposucción',
-      'Cirugías corporales',
-      'Armonización facial',
-    ],
-  },
-  {
-    name: 'Dra. Paulina Garriga Maldonado',
-    role: 'Especialista en Estética Orofacial',
-    image: '/images/site/dra-paulina-garriga.webp',
-    credentials: [
-      'Cirujano Dentista y Tecnóloga Dental, Universidad de Chile',
-      'Especialista en estética dental y orofacial',
-      'Más de 12 años de trabajo y perfeccionamiento en Estética Facial, tanto en Chile como en el extranjero',
-      'Integrante del directorio SOEMAF (Soc. Chilena de Estética Maxilofacial)',
-    ],
-    specialties: [
-      'Bichectomía y Armonización del rostro',
-      'Técnicas avanzadas con toxina botulínica, rellenos, bioestimulación e hilos tensores',
-      'Evaluación estética y funcional tercio inferior',
+      { label: 'Liposucción', href: '/procedimientos-corporales/liposuccion-vaser/' },
+      { label: 'Cirugías corporales', href: '/procedimientos-corporales/' },
+      { label: 'Armonización facial', href: '/procedimientos-faciales/' },
     ],
   },
 ];
@@ -129,7 +113,7 @@ const physicianJsonLd = JSON.stringify({
     "image": new URL(doctor.image, siteConfig.url).href,
     "jobTitle": doctor.role,
     "description": doctor.credentials.join('. '),
-    "medicalSpecialty": doctor.specialties,
+    "medicalSpecialty": doctor.specialties.map((s) => s.label),
     "alumniOf": doctor.credentials
       .filter((c) => universityRegex.test(c))
       .map((c) => ({
@@ -167,7 +151,7 @@ const physicianJsonLd = JSON.stringify({
       <p class="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-primary-300">Bendov Clínica Estética</p>
       <h1 class="font-display text-3xl font-bold text-white md:text-5xl lg:text-6xl">Sobre Nosotros</h1>
       <p class="mx-auto mt-6 max-w-2xl text-lg text-primary-200 md:text-xl">
-        Más de una década dedicados a la medicina estética, ayudando a nuestros pacientes a recuperar su confianza.
+        Más de dos décadas dedicados a la medicina estética, ayudando a nuestros pacientes a recuperar su confianza.
       </p>
     </div>
   </section>
@@ -295,9 +279,12 @@ const physicianJsonLd = JSON.stringify({
                 <h4 class="text-sm font-semibold uppercase tracking-wider text-neutral-400">Áreas de Especialidad</h4>
                 <div class="mt-3 flex flex-wrap gap-2">
                   {doctor.specialties.map((spec) => (
-                    <span class="inline-block rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700 ring-1 ring-primary-100">
-                      {spec}
-                    </span>
+                    <a
+                      href={spec.href}
+                      class="inline-block rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700 ring-1 ring-primary-100 transition-colors hover:bg-primary-100 hover:text-primary-800"
+                    >
+                      {spec.label}
+                    </a>
                   ))}
                 </div>
               </div>
