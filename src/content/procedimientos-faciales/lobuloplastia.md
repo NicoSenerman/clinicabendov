@@ -9,7 +9,7 @@ seoKeywords: "Lobuloplastia"
 heroImage: "/images/procedures/lobuloplastia.webp"
 thumbnailImage: "/images/procedures/lobuloplastia.webp"
 order: 0
-draft: false
+draft: true
 ---
 
 ### Lobuloplastia: Redefine la armonía de tus orejas

@@ -1,14 +1,14 @@
 ---
 title: "Aumento Mamario"
 slug: "aumento-mamario"
-category: "corporales"
-description: "Aumenta el volumen y mejora la forma de tu busto con resultados naturales. Implantes seguros, cirujanos expertos y evaluación gratuita en Clínica Bendov. Aumento Mamario"
+category: "mamarios"
+description: "Aumenta el volumen y mejora la forma de tu busto con resultados naturales. Implantes seguros, cirujanos expertos y evaluación gratuita en Clínica Bendov."
 seoTitle: "Aumento Mamario en Santiago | Clínica Bendov | Resultados Naturales"
-seoDescription: "Aumenta el volumen y mejora la forma de tu busto con resultados naturales. Implantes seguros, cirujanos expertos y evaluación gratuita en Clínica Bendov. Aumento Mamario"
+seoDescription: "Aumenta el volumen y mejora la forma de tu busto con resultados naturales. Implantes seguros, cirujanos expertos y evaluación gratuita en Clínica Bendov."
 seoKeywords: "aumento mamario,aumento de mamas,cirugía de aumento mamario"
 heroImage: "/images/procedures/aumento-mamario.webp"
 thumbnailImage: "/images/procedures/aumento-mamario.webp"
-order: 0
+order: 1
 draft: true
 ---
 
@@ -44,8 +44,6 @@ El aumento mamario es una excelente opción si:
 
 La cirugía se realiza en pabellón bajo anestesia general. El implante se introduce a través de una pequeña incisión (habitualmente en el surco submamario o borde areolar), y se coloca en un plano cuidadosamente definido, ya sea sobre o bajo el músculo, según cada caso.
 
-Nuestro equipo médico te explicará con detalle qué tipo de abordaje y plano son más convenientes para ti, siempre buscando un resultado armónico, seguro y duradero.
-
 **Duración:** 1 a 2 horas
 
 **Recuperación inicial:** 5 a 7 días
@@ -54,28 +52,10 @@ Nuestro equipo médico te explicará con detalle qué tipo de abordaje y plano s
 
 **Resultados definitivos:** entre el 2.º y 3.er mes
 
-### ¿Qué tipo de implantes se utilizan?
-
-Hoy en día, la mayoría de los implantes utilizados son **de silicona de alta calidad y microtexturizados**, ya que ofrecen mayor seguridad y mejor integración en el tejido.
-
-Existen diferentes formas, tamaños y proyecciones de prótesis, pero esos detalles se conversan directamente en la evaluación médica, considerando tu contextura, tus expectativas y lo que busca lograr el procedimiento en ti.
-
 ### ¿Es una cirugía segura?
 
-Sí. En Clínica Bendov realizamos esta cirugía con **protocolos estrictos de seguridad**, en pabellones autorizados y con cirujanos con experiencia comprobada. Usamos solo implantes de marcas reconocidas internacionalmente y te acompañamos en cada etapa del proceso: antes, durante y después.
-
-### ¿Y la cicatriz?
-
-La incisión se ubica en zonas estratégicas para que la cicatriz sea lo menos visible posible, como el pliegue natural del surco mamario o el borde inferior de la areola.
-
-Además, te entregamos todas las indicaciones y tratamientos postoperatorios para lograr una cicatrización estética y controlada.
+Sí. En Clínica Bendov realizamos esta cirugía con **protocolos estrictos de seguridad**, en pabellones autorizados y con cirujanos con experiencia comprobada. Usamos solo implantes de marcas reconocidas internacionalmente y te acompañamos en cada etapa del proceso.
 
 ### ¿Quieres saber si el aumento mamario es para ti?
 
-Te invitamos a agendar una **evaluación médica gratuita y sin compromiso**.
-
-Nuestro equipo te guiará, responderá todas tus preguntas y te dará una propuesta honesta, profesional y personalizada.
-
-Tu seguridad, tu cuerpo, tu decisión.
-
-En [Clínica Bendov](https://clinicabendov.cl/clinica-estetica-bendov/), **nos tomamos en serio tu confianza.**
+Te invitamos a agendar una **evaluación médica gratuita y sin compromiso**. Nuestro equipo te guiará, responderá todas tus preguntas y te dará una propuesta honesta, profesional y personalizada.

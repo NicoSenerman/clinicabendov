@@ -9,7 +9,7 @@ seoKeywords: "Bioestimuladores"
 heroImage: "/images/procedures/bioestimuladores.webp"
 thumbnailImage: "/images/procedures/bioestimuladores.webp"
 order: 0
-draft: false
+draft: true
 ---
 
 ### Bioestimuladores Faciales de Colágeno

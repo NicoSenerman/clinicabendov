@@ -9,7 +9,7 @@ seoKeywords: "lifting facial,cirugía facial estética,lifting facial en Santiag
 heroImage: "/images/procedures/lifting-facial.webp"
 thumbnailImage: "/images/procedures/lifting-facial.webp"
 order: 0
-draft: false
+draft: true
 ---
 
 ## Lifting Facial: Rejuvenece tu rostro, recupera tu expresión

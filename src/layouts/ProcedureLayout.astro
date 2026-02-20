@@ -30,24 +30,28 @@ const categoryLabels: Record<string, string> = {
   corporales: 'Procedimientos Corporales',
   faciales: 'Procedimientos Faciales',
   intimos: 'Procedimientos Íntimos',
+  mamarios: 'Cirugías Mamarias',
 };
 
 const categoryShortLabels: Record<string, string> = {
   corporales: 'Corporales',
   faciales: 'Faciales',
   intimos: 'Íntimos',
+  mamarios: 'Mamarias',
 };
 
 const categoryHrefs: Record<string, string> = {
   corporales: '/procedimientos-corporales/',
   faciales: '/procedimientos-faciales/',
   intimos: '/procedimientos-intimos/',
+  mamarios: '/procedimientos-mamarios/',
 };
 
 const collectionNames: Record<string, string> = {
   corporales: 'procedimientos-corporales',
   faciales: 'procedimientos-faciales',
   intimos: 'procedimientos-intimos',
+  mamarios: 'procedimientos-mamarios',
 };
 
 // Fetch related procedures from the same category (excluding current)
@@ -70,9 +74,10 @@ if (collectionName) {
 
 // Fetch related blog articles by matching category keywords
 const categoryKeywords: Record<string, string[]> = {
-  corporales: ['corporal', 'liposucción', 'abdominoplastia', 'mamaria', 'mamario', 'corporal'],
+  corporales: ['corporal', 'liposucción', 'abdominoplastia', 'corporal'],
   faciales: ['facial', 'rostro', 'botox', 'relleno', 'lifting', 'blefaroplastia', 'armonización'],
   intimos: ['íntimo', 'intimo', 'ginecológico', 'vaginal', 'labioplastia', 'gineco'],
+  mamarios: ['mamaria', 'mamario', 'seno', 'pecho', 'mama', 'implante'],
 };
 
 const allBlogPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -145,12 +150,12 @@ const relatedBlogPosts = allBlogPosts
       <img
         src={heroImage}
         alt=""
-        class="absolute inset-0 h-full w-full object-cover opacity-20"
+        class="absolute inset-0 h-full w-full object-cover opacity-40"
         loading="eager"
         decoding="async"
       />
     )}
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-900/80 to-primary-800/70" />
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/60 via-primary-900/45 to-primary-800/30" />
     <div class="relative mx-auto max-w-4xl px-6 text-left md:text-center">
       <!-- Breadcrumb -->
       <nav class="mb-6 flex items-center gap-2 text-sm text-primary-300 md:justify-center" aria-label="Breadcrumb">

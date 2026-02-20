@@ -12,8 +12,8 @@ const sorted = procedures.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 
   description="Procedimientos ginecológicos estéticos en Las Condes. Rejuvenecimiento íntimo, labioplastia láser, vaginoplastia y más."
 >
   <section class="relative overflow-hidden bg-primary-950 pt-32 pb-20 md:pt-40 md:pb-28">
-    <img src="/images/site/cat-intimos.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" loading="eager" decoding="async" />
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-900/80 to-primary-800/70" />
+    <img src="/images/site/cat-intimos.webp" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40" loading="eager" decoding="async" />
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/60 via-primary-900/45 to-primary-800/30" />
     <div class="relative mx-auto max-w-4xl px-6 text-center">
       <p class="mb-4 text-sm font-semibold uppercase tracking-[0.15em] text-primary-300">Bendov Clínica Estética</p>
       <h1 class="font-display text-3xl font-bold text-white md:text-5xl">Procedimientos Íntimos</h1>
@@ -31,6 +31,7 @@ const sorted = procedures.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 
           href={`/procedimientos-intimos/${proc.data.slug}/`}
           description={proc.data.description}
           image={proc.data.thumbnailImage}
+          buttonLabel="Ver Procedimiento"
         />
       ))}
     </div>

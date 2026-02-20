@@ -9,7 +9,7 @@ seoKeywords: "abdominoplastia,abdominoplastia en Santiago,cirugía de abdomen"
 heroImage: "/images/procedures/abdominoplastia.webp"
 thumbnailImage: "/images/procedures/abdominoplastia.webp"
 order: 0
-draft: false
+draft: true
 ---
 
 ## Abdominoplastia: recupera tu abdomen firme y plano

@@ -7,7 +7,7 @@ import { siteConfig } from '../data/site';
 // 5 "pillar" categories matching the Recafy catalog structure
 const procedurePillars = [
   {
-    title: 'Procedimientos y Cirugías Corporales',
+    title: 'Procedimientos Corporales',
     description: 'Liposucción Vaser, abdominoplastia, lipoescultura y más procedimientos para lograr la figura que deseas.',
     href: '/procedimientos-corporales/',
     image: '/images/site/cat-corporales.webp',
@@ -25,25 +25,19 @@ const procedurePillars = [
     image: '/images/site/cat-intimos.webp',
   },
   {
-    title: 'Cirugías Mamarias',
-    description: 'Aumento mamario, mastopexia y reducción mamaria realizados por cirujanos plásticos especializados.',
-    href: '/procedimientos-corporales/aumento-mamario/',
-    image: '/images/site/cat-mamarias.webp',
-  },
-  {
     title: 'Bienestar Hormonal',
     description: 'Pellet de testosterona LifeChip para mejorar energía, bienestar y calidad de vida.',
     href: '/procedimientos-corporales/lifechip-testosterona/',
-    image: '/images/site/cat-hormonal.webp',
+    image: '/images/procedures/lifechip-testosterona.webp',
+
   },
 ];
 
 // Hero pillar quick-links (short labels for the hero banner)
 const heroPillars = [
-  { label: 'Cirugías Corporales', href: '/procedimientos-corporales/' },
+  { label: 'Procedimientos Corporales', href: '/procedimientos-corporales/' },
   { label: 'Armonización Facial', href: '/procedimientos-faciales/' },
   { label: 'Ginecoestética', href: '/procedimientos-intimos/' },
-  { label: 'Cirugías Mamarias', href: '/procedimientos-corporales/aumento-mamario/' },
   { label: 'Bienestar Hormonal', href: '/procedimientos-corporales/lifechip-testosterona/' },
 ];
 
@@ -59,11 +53,11 @@ const heroPillars = [
     <img
       src="/images/site/hero-bg.webp"
       alt=""
-      class="absolute inset-0 h-full w-full object-cover opacity-20"
+      class="absolute inset-0 h-full w-full object-cover opacity-40"
       loading="eager"
       decoding="async"
     />
-    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/85 via-primary-900/75 to-primary-800/65" />
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-950/60 via-primary-900/45 to-primary-800/30" />
 
     <div class="relative mx-auto max-w-6xl px-6">
       <div class="mx-auto max-w-3xl text-center">
@@ -119,7 +113,7 @@ const heroPillars = [
   <!-- About / Trust section -->
   <section class="bg-primary-950 py-24">
     <div class="mx-auto max-w-6xl px-6">
-      <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+      <div class="mx-auto max-w-3xl text-center">
         <div>
           <p class="text-sm font-semibold uppercase tracking-[0.15em] text-primary-400">Sobre Nosotros</p>
           <h2 class="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
@@ -128,8 +122,8 @@ const heroPillars = [
           <p class="mt-6 text-lg leading-relaxed text-primary-200">
             Somos una clínica de medicina estética dedicada a resolver diferentes
             necesidades de nuestros pacientes tanto mujeres como hombres. Nuestros
-            principales procedimientos son Cirugías Corporales, Armonización Facial,
-            Ginecoestética, Cirugías Mamarias y Bienestar Hormonal.
+            principales procedimientos son Procedimientos Corporales, Armonización Facial,
+            Ginecoestética, Aumento Mamario y Bienestar Hormonal.
           </p>
           <p class="mt-4 text-lg leading-relaxed text-primary-200">
             Confía tu belleza a los mejores. Te acompañamos de principio a fin con una
@@ -144,15 +138,6 @@ const heroPillars = [
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </a>
-        </div>
-        <div class="aspect-[4/3] overflow-hidden rounded-2xl">
-          <img
-            src="/images/site/equipo-bendov.webp"
-            alt="Clínica Bendov - Medicina Estética"
-            class="h-full w-full object-cover"
-            loading="lazy"
-            decoding="async"
-          />
         </div>
       </div>
     </div>
@@ -171,13 +156,13 @@ const heroPillars = [
         </p>
       </div>
 
-      <div class="mt-12 trustindex-reviews">
-        <!-- Trustindex Google Reviews Widget (standalone, no WP dependency) -->
-        <script defer async src='https://cdn.trustindex.io/loader.js?4721dc764ab986480346dfc4846'></script>
+      <!-- Trustindex widget anchor — must be in the DOM before the loader runs -->
+      <div class="trustindex-reviews mt-12" id="trustindex-container">
+        <div data-trustindex-id="4721dc764ab986480346dfc4846"></div>
       </div>
 
-      <!-- Fallback: link to Google Maps reviews -->
-      <div class="mt-8 text-center">
+      <!-- Fallback shown if widget fails to render after timeout -->
+      <div id="trustindex-fallback" class="mt-8 hidden text-center">
         <a
           href="https://www.google.com/maps/place/Bendov+Cl%C3%ADnica+Est%C3%A9tica/@-33.4145,-70.5956,17z/"
           target="_blank"
@@ -190,6 +175,46 @@ const heroPillars = [
           Ver todas las reseñas en Google Maps
         </a>
       </div>
+
+      <script>
+        let tiLoaded = false;
+
+        function loadTrustindex() {
+          const container = document.getElementById('trustindex-container');
+          const fallback = document.getElementById('trustindex-fallback');
+          if (!container) return;
+
+          // Reset state on each navigation
+          tiLoaded = false;
+          fallback?.classList.add('hidden');
+
+          // Remove any previously injected widget/script but keep the anchor div
+          container.querySelectorAll('script, .ti-widget').forEach(el => el.remove());
+
+          // Restore anchor div in case it was replaced by the widget on prior load
+          if (!container.querySelector('[data-trustindex-id]')) {
+            const anchor = document.createElement('div');
+            anchor.setAttribute('data-trustindex-id', '4721dc764ab986480346dfc4846');
+            container.prepend(anchor);
+          }
+
+          // Inject loader
+          const s = document.createElement('script');
+          s.src = 'https://cdn.trustindex.io/loader.js?4721dc764ab986480346dfc4846';
+          s.async = true;
+          s.onload = () => { tiLoaded = true; };
+          container.appendChild(s);
+
+          // After 5 seconds, if no widget rendered, show fallback
+          setTimeout(() => {
+            if (!tiLoaded || !container.querySelector('.ti-widget')) {
+              fallback?.classList.remove('hidden');
+            }
+          }, 5000);
+        }
+
+        document.addEventListener('astro:page-load', loadTrustindex);
+      </script>
     </div>
   </section>
 

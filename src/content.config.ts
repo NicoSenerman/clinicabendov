@@ -4,7 +4,7 @@ import { glob } from 'astro/loaders';
 const procedimientosSchema = z.object({
   title: z.string(),
   slug: z.string(),
-  category: z.enum(['corporales', 'faciales', 'intimos']),
+  category: z.enum(['corporales', 'faciales', 'intimos', 'mamarios']),
   description: z.string(),
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
@@ -30,6 +30,11 @@ const procedimientosIntimos = defineCollection({
   schema: procedimientosSchema,
 });
 
+const procedimientosMamarios = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/procedimientos-mamarios' }),
+  schema: procedimientosSchema,
+});
+
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
@@ -51,5 +56,6 @@ export const collections = {
   'procedimientos-corporales': procedimientosCorporales,
   'procedimientos-faciales': procedimientosFaciales,
   'procedimientos-intimos': procedimientosIntimos,
+  'procedimientos-mamarios': procedimientosMamarios,
   blog,
 };

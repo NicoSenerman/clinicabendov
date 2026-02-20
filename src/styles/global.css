@@ -114,17 +114,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
 }
 
-/* Checkmark bullet */
+/* Branded checkmark bullet */
 .prose ul li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.45em;
-  width: 0.75em;
-  height: 0.75em;
-  border-radius: 50%;
-  background-color: var(--color-primary-400);
-  opacity: 0.7;
+  top: 0.3em;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Ccircle cx='8' cy='8' r='7.5' fill='%232d7ba3' fill-opacity='0.12'/%3E%3Cpath d='M4.5 8.5l2.5 2.5 4.5-5' stroke='%232d7ba3' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
 }
 
 .prose ol li {

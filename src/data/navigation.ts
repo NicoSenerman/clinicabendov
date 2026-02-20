@@ -12,9 +12,8 @@ export const mainNavigation: NavItem[] = [
     label: 'Servicios',
     href: '#',
     children: [
-      { label: 'Cirugías Corporales', href: '/procedimientos-corporales/', heading: true },
+      { label: 'Procedimientos Corporales', href: '/procedimientos-corporales/', heading: true },
       { label: 'Liposucción Vaser', href: '/procedimientos-corporales/liposuccion-vaser/' },
-      { label: 'Abdominoplastia', href: '/procedimientos-corporales/abdominoplastia/' },
       { label: 'Lipoescultura', href: '/procedimientos-corporales/lipoescultura/' },
       { label: 'CelluSculpt Pro', href: '/procedimientos-corporales/cellusculpt-pro/' },
       { label: 'Ver todos →', href: '/procedimientos-corporales/' },
@@ -29,8 +28,7 @@ export const mainNavigation: NavItem[] = [
       { label: 'Labioplastia Láser', href: '/procedimientos-intimos/labioplastia-laser/' },
       { label: 'Vaginoplastia', href: '/procedimientos-intimos/vaginoplastia/' },
       { label: 'Ver todos →', href: '/procedimientos-intimos/' },
-      { label: 'Cirugías Mamarias', href: '/procedimientos-corporales/aumento-mamario/', heading: true },
-      { label: 'Aumento Mamario', href: '/procedimientos-corporales/aumento-mamario/' },
+
       { label: 'Bienestar Hormonal', href: '/procedimientos-corporales/lifechip-testosterona/', heading: true },
       { label: 'LifeChip Testosterona', href: '/procedimientos-corporales/lifechip-testosterona/' },
     ],
@@ -49,20 +47,20 @@ export const mobileNavigation: NavItem[] = [
     href: '#',
     children: [
       {
-        label: 'Cirugías Corporales',
+        label: 'Procedimientos Corporales',
         href: '/procedimientos-corporales/',
         children: [
           { label: 'Ver todos los procedimientos', href: '/procedimientos-corporales/' },
           { label: 'Liposucción Vaser', href: '/procedimientos-corporales/liposuccion-vaser/' },
-          { label: 'Abdominoplastia', href: '/procedimientos-corporales/abdominoplastia/' },
           { label: 'Lipo en Ginecomastia', href: '/procedimientos-corporales/lipo-en-ginecomastia/' },
           { label: 'Lipo Transferencia', href: '/procedimientos-corporales/lipo-transferencia/' },
           { label: 'Lipoescultura', href: '/procedimientos-corporales/lipoescultura/' },
           { label: 'Minilipo Vaser', href: '/procedimientos-corporales/minilipo-vaser/' },
-          { label: 'Lifting de Brazos', href: '/procedimientos-corporales/lifting-de-brazos/' },
           { label: 'Hiperhidrosis', href: '/procedimientos-corporales/hiperhidrosis/' },
           { label: 'CelluSculpt Pro', href: '/procedimientos-corporales/cellusculpt-pro/' },
           { label: 'Carboxiterapia', href: '/procedimientos-corporales/carboxiterapia/' },
+          { label: 'Lipo Retraction', href: '/procedimientos-corporales/lipo-retraction/' },
+          { label: 'Endolaser Corporal', href: '/procedimientos-corporales/endolaser-corporal/' },
         ],
       },
       {
@@ -73,7 +71,6 @@ export const mobileNavigation: NavItem[] = [
           { label: 'Toxina Botulínica', href: '/procedimientos-faciales/toxina-botulinica/' },
           { label: 'Rellenos Faciales', href: '/procedimientos-faciales/rellenos-faciales/' },
           { label: 'Blefaroplastia', href: '/procedimientos-faciales/blefaroplastia/' },
-          { label: 'Lifting Facial', href: '/procedimientos-faciales/lifting-facial/' },
           { label: 'Hilos Tensores', href: '/procedimientos-faciales/hilos-tensores/' },
           { label: 'Plasma Rico en Plaquetas', href: '/procedimientos-faciales/plasma-rico-en-plaquetas/' },
           { label: 'Bioestimulador de Colágeno', href: '/procedimientos-faciales/bioestimulador-de-colageno/' },
@@ -83,8 +80,11 @@ export const mobileNavigation: NavItem[] = [
           { label: 'Bioplastia de Pómulos', href: '/procedimientos-faciales/bioplastia-de-pomulos/' },
           { label: 'Rinomodelación', href: '/procedimientos-faciales/rinomodelacion/' },
           { label: 'Láser Fraccionado de CO2', href: '/procedimientos-faciales/laser-fraccionado-co2/' },
-          { label: 'Lobuloplastia', href: '/procedimientos-faciales/lobuloplastia/' },
           { label: 'Perfilado Mandibular', href: '/procedimientos-faciales/perfilado-mandibular/' },
+          { label: 'Endolaser Facial', href: '/procedimientos-faciales/endolaser-facial/' },
+          { label: 'Armonización Facial Full', href: '/procedimientos-faciales/armonizacion-facial-full/' },
+          { label: 'Reposición Tercio Medio', href: '/procedimientos-faciales/reposicion-tercio-medio/' },
+          { label: 'Sculptra', href: '/procedimientos-faciales/sculptra/' },
         ],
       },
       {
@@ -100,7 +100,7 @@ export const mobileNavigation: NavItem[] = [
           { label: 'Vaginoplastia', href: '/procedimientos-intimos/vaginoplastia/' },
         ],
       },
-      { label: 'Cirugías Mamarias', href: '/procedimientos-corporales/aumento-mamario/' },
+
       { label: 'Bienestar Hormonal', href: '/procedimientos-corporales/lifechip-testosterona/' },
     ],
   },
@@ -122,15 +122,14 @@ export const mobileNavigation: NavItem[] = [
 
 export const footerNavigation = {
   procedimientos: [
-    { label: 'Cirugías Corporales', href: '/procedimientos-corporales/' },
+    { label: 'Procedimientos Corporales', href: '/procedimientos-corporales/' },
     { label: 'Armonización Facial', href: '/procedimientos-faciales/' },
     { label: 'Ginecoestética', href: '/procedimientos-intimos/' },
-    { label: 'Cirugías Mamarias', href: '/procedimientos-corporales/aumento-mamario/' },
+
     { label: 'Bienestar Hormonal', href: '/procedimientos-corporales/lifechip-testosterona/' },
   ],
   clinica: [
     { label: 'Sobre Nosotros', href: '/sobre-nosotros/' },
-    { label: 'Experiencias', href: '/experiencias/' },
     { label: 'Blog', href: '/blog/' },
   ],
   legal: [

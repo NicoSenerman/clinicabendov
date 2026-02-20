@@ -9,7 +9,7 @@ seoKeywords: "Lifting de brazos,Braquioplastia,Cirugia de Brazos"
 heroImage: "/images/procedures/lifting-de-brazos.webp"
 thumbnailImage: "/images/procedures/lifting-de-brazos.webp"
 order: 0
-draft: false
+draft: true
 ---
 
 ## Lifting de Brazos: Adiós a la flacidez, hola a tus brazos firmes
