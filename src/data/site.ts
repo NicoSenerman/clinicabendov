@@ -27,6 +27,7 @@ export const siteConfig = {
     gtmId: 'GTM-PDNW6DQP',
     gaId: 'G-V1RQKR0RBB',
     gtId: 'GT-M34BB75Z',
+    metaPixelId: '3680643718925109',
   },
 
   openingHours: 'Lunes a Viernes, 09:00 - 19:00',
