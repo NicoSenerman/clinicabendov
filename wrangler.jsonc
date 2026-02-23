@@ -3,6 +3,12 @@
   "name": "clinicabendov",
   "compatibility_date": "2026-02-01",
 
+  // Custom domains — Cloudflare auto-creates DNS records and SSL certs
+  "routes": [
+    { "pattern": "clinicabendov.cl", "custom_domain": true },
+    { "pattern": "www.clinicabendov.cl", "custom_domain": true }
+  ],
+
   // Static assets served via Workers
   "assets": {
     "directory": "./dist",
