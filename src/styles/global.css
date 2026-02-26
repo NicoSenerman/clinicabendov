@@ -43,6 +43,14 @@
   --color-neutral-950: #282828;
 }
 
+/* Prevent inline SVG icons from flashing at full size during View Transitions.
+   SVGs without explicit width/height attributes default to 300x150 or fill their
+   container. This cap ensures they stay small while Tailwind classes load. */
+svg:not([width]) {
+  max-width: 1.5em;
+  max-height: 1.5em;
+}
+
 /* Base styles */
 html {
   scroll-behavior: smooth;

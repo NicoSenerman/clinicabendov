@@ -61,13 +61,13 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
       >
         {/* Panel header */}
         <div className="flex items-center justify-between border-b border-neutral-100 px-6 py-4">
-          <img src="/images/site/logo-bendov.png" alt="Bendov Clínica Estética" className="h-7 w-auto" />
+          <img src="/images/site/logo-bendov.png" alt="Bendov Clínica Estética" className="h-7 w-auto" width="83" height="28" />
           <button
             onClick={() => setIsOpen(false)}
             className="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-800"
             aria-label="Cerrar menú"
           >
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="h-5 w-5" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -89,6 +89,8 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
                           className={`h-4 w-4 text-neutral-400 transition-transform duration-200 ${
                             expandedItems.has(item.label) ? 'rotate-180' : ''
                           }`}
+                          width="16"
+                          height="16"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -116,6 +118,8 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
                                     className={`h-3.5 w-3.5 text-neutral-400 transition-transform duration-200 ${
                                       expandedItems.has(child.label) ? 'rotate-180' : ''
                                     }`}
+                                    width="14"
+                                    height="14"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
@@ -188,7 +192,7 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
               data-gtm-location="mobile-nav"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-primary-600 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-primary-700"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="h-5 w-5" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
               </svg>
               Agenda tu Evaluación
@@ -201,7 +205,7 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
               data-gtm-location="mobile-nav"
               className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25d366] px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-[#20bd5a]"
             >
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="h-5 w-5" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d={WHATSAPP_ICON_PATH} />
               </svg>
               Escríbenos por WhatsApp
