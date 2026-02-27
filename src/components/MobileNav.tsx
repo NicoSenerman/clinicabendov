@@ -19,6 +19,18 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
     setMounted(true);
   }, []);
 
+  // Close mobile nav when Astro View Transitions triggers a page swap.
+  // The panel is a React portal on document.body; without this, the portal
+  // can briefly flash during the DOM swap before React reconciles.
+  useEffect(() => {
+    const closeOnSwap = () => {
+      setIsOpen(false);
+      setExpandedItems(new Set());
+    };
+    document.addEventListener('astro:before-swap', closeOnSwap);
+    return () => document.removeEventListener('astro:before-swap', closeOnSwap);
+  }, []);
+
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
@@ -48,15 +60,15 @@ export default function MobileNav({ navigation, whatsappHref, schedulingUrl }: P
       {/* Overlay */}
       <div
         className={`fixed inset-0 z-[9998] bg-black/20 backdrop-blur-sm transition-opacity duration-300 ${
-          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
+          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0 invisible'
         }`}
         onClick={() => setIsOpen(false)}
       />
 
       {/* Slide-out panel */}
       <div
-        className={`fixed inset-y-0 left-0 z-[9999] w-full max-w-sm transform bg-white shadow-2xl transition-transform duration-300 ease-out ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed inset-y-0 left-0 z-[9999] w-full max-w-sm transform bg-white shadow-2xl transition-[transform,visibility] duration-300 ease-out ${
+          isOpen ? 'visible translate-x-0' : 'invisible -translate-x-full'
         }`}
       >
         {/* Panel header */}
